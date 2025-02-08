@@ -1,0 +1,31 @@
+---
+let lang = "en";
+let description = "Daniel Páez's portfolio";
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Daniel Andrés Páez Rojas" />
+    <!-- Open graph -->
+    <meta property="og:title" content="Portfolio de Daniel Páez" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danielpaez.dev" />
+    <meta property="og:image" content="https://danielpaez.dev/og-image.jpg" />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Daniel Páez" />
+    <meta property="og:locale" content="en_US" />
+    <!-- Twitter -->
+
+    <!-- Favicon -->
+    <title>Daniel Páez</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
