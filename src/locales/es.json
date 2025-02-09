@@ -2,7 +2,7 @@
   "basics": {
     "name": "Daniel Andrés Páez Rojas",
     "label": "Desarrollador frontend",
-    "image": "/public/images/me.webp",
+    "image": "@images/me.webp",
     "url": "https://danielpaez.dev",
     "summary": "Desarrollador frontend con experiencia en la creación de aplicaciones web eficientes, óptimas y estéticas.",
     "contact": {

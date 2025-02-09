@@ -2,7 +2,7 @@
   "basics": {
     "name": "Daniel Andrés Páez Rojas",
     "label": "Frontend developer",
-    "image": "/public/images/me.webp",
+    "image": "@images/me.webp",
     "url": "https://danielpaez.dev",
     "summary": "Frontend developer with with experience creating efficient and optimal and aesthetic web applications",
     "contact": {
