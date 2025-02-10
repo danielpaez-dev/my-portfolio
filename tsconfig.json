@@ -6,10 +6,12 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
+    "strict": false,
+    "noImplicitAny": false,
     "paths": {
       "@/*": ["src/*"],
-      "@icons/*": ["src/assets/icons/*"],
-      "@images/*": ["/public/images/*"]
+      "@images/*": ["public/images/*"],
+      "@data/*": ["src/i18n/locales/*"]
     }
   }
 }

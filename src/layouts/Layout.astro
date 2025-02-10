@@ -1,15 +1,9 @@
 ---
-import es from "@/locales/es.json";
-console.log(es);
-
-let lang = "en";
-let description = "Daniel Páez's portfolio";
-
-// Importar todos los SVG de icons
-const icons = import.meta.glob("@/assets/icons/*.svg", {
-  as: "raw",
-  eager: true,
-});
+import { lang } from "../i18n/utils/utils.ts";
+import { basics } from "@data/en.json";
+import personData from "../data/json-ld-person.json";
+import portfolioData from "../data/json-ld-creativework.json";
+const { name, image, summary, url, shareTitle } = basics;
 ---
 
 <!doctype html>
@@ -18,82 +12,35 @@ const icons = import.meta.glob("@/assets/icons/*.svg", {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
-    <meta name="author" content="Daniel Andrés Páez Rojas" />
+    <meta name="description" content={summary} />
+    <meta name="author" content={name} />
+    <!-- Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(personData)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(portfolioData)}
+    />
 
     <!-- Open graph -->
-    <meta property="og:title" content="Portfolio de Daniel Páez" />
+    <meta property="og:title" content={shareTitle} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://danielpaez.dev" />
-    <meta property="og:image" content="https://danielpaez.dev/og-image.jpg" />
-    <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="Daniel Páez" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+    <meta property="og:description" content={summary} />
+    <meta property="og:site_name" content={name} />
     <meta property="og:locale" content="en_US" />
 
-    <title>Daniel Páez</title>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={shareTitle} />
+    <meta name="twitter:description" content={summary} />
+    <meta name="twitter:image" content={image} />
+    <title>{name}</title>
   </head>
 
   <body>
     <slot />
-
-    <!-- Sección de prueba de iconos -->
-    {
-      !import.meta.env.PROD && (
-        <div
-          style="
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        background: white;
-        padding: 1rem;
-        z-index: 9999;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        max-height: 80vh;
-        overflow-y: auto;
-        max-width: 300px;
-      "
-        >
-          <h3 style="margin-bottom: 1rem;">
-            Icon Test ({Object.keys(icons).length} icons)
-          </h3>
-          <div
-            style="
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-          gap: 1rem;
-        "
-          >
-            {Object.entries(icons).map(([path, svg]) => {
-              const iconName = path.split("/").pop()?.replace(".svg", "");
-              return (
-                <div
-                  style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  padding: 0.5rem;
-                  border: 1px solid #eee;
-                  border-radius: 4px;
-                "
-                  title={iconName}
-                >
-                  <div style="width: 24px; height: 24px;" set:html={svg} />
-                  <small
-                    style="
-                  font-size: 0.6rem;
-                  margin-top: 0.25rem;
-                  text-align: center;
-                  word-break: break-all;
-                "
-                  >
-                    {iconName}
-                  </small>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )
-    }
   </body>
 </html>

@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daniel Andrés Páez Rojas",
+  "jobTitle": [
+    {
+      "@value": "Desarrollador Frontend",
+      "@language": "es"
+    },
+    {
+      "@value": "Frontend Developer",
+      "@language": "en"
+    }
+  ],
+  "image": "https://danielpaez.dev/images/me.webp",
+  "url": "https://danielpaez.dev",
+  "description": [
+    {
+      "@value": "Desarrollador frontend con experiencia en la creación de aplicaciones web eficientes, óptimas y estéticas.",
+      "@language": "es"
+    },
+    {
+      "@value": "Frontend developer with experience in creating efficient, optimal, and aesthetically pleasing web applications.",
+      "@language": "en"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/danielpaez-dev",
+    "https://github.com/danielpaez-dev",
+    "https://leetcode.com/u/danielpaez-dev/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gijón",
+    "addressCountry": "ES"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "danielpaez.dev@proton.me",
+    "contactType": "personal"
+  },
+  "knowsAbout": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Tailwind",
+    "Bootstrap",
+    "MySQL",
+    "Python",
+    "Django",
+    "Git",
+    "GitHub",
+    "Astro",
+    "Figma",
+    "Vercel",
+    "Markdown"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Meta (Coursera)",
+    "url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": [
+      {
+        "@value": "Desarrollador Frontend de Meta",
+        "@language": "es"
+      },
+      {
+        "@value": "Meta Frontend Developer Certification",
+        "@language": "en"
+      }
+    ]
+  }
+}

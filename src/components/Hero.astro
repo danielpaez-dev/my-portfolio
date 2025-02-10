@@ -1,0 +1,120 @@
+---
+import { lang } from "../i18n/utils/utils.ts";
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Me from "../assets/images/me.webp";
+let basics;
+if (lang === "es") {
+  basics = await import("@data/es.json").then((module) => module.basics);
+} else {
+  basics = await import("@data/en.json").then((module) => module.basics);
+}
+const { image, name, summary, location, contact, profiles } = basics;
+---
+
+<section>
+  <div class="container">
+    <div
+      class="info grid h-full grid-flow-row auto-rows-auto items-center text-center md:grid-flow-col md:grid-cols-7 md:text-left"
+    >
+      <Image
+        src={Me}
+        alt={name}
+        class="order-1 col-span-2 col-start-2 mx-auto h-50 w-50 max-w-xs justify-self-center rounded-3xl object-cover md:order-last md:col-span-2 md:col-start-6"
+      />
+      <div
+        id="info"
+        class="order-2 col-span-4 flex h-full flex-col place-content-between items-center gap-2.5 md:order-1 md:col-span-4 md:items-start"
+      >
+        <h1 class="text-3xl capitalize" itemprop="name">{name}</h1>
+        <div>
+          <h3 itemprop="description">{summary}</h3>
+          <a
+            class="flex justify-center md:justify-start"
+            aria-label="Location"
+            href={location.url}
+          >
+            {
+              (() => {
+                const direction = `${location.city}, ${location.region}`;
+                return (
+                  <>
+                    <img
+                      src={location.icon}
+                      alt={direction}
+                      title={direction}
+                      class="svg mr-1.5"
+                    />
+                    <span
+                      itemprop="address"
+                      itemscope
+                      itemtype="http://schema.org/PostalAddress"
+                    >
+                      <meta
+                        itemprop="addressLocality"
+                        content={location.city}
+                      />
+                      <meta
+                        itemprop="addressRegion"
+                        content={location.region}
+                      />
+                      {`${location.city}, ${location.region}`}
+                    </span>
+                  </>
+                );
+              })()
+            }
+          </a>
+        </div>
+
+        <ul
+          class="flex justify-center gap-0.5 md:justify-start"
+          role="list"
+          aria-label="Contact information"
+        >
+          {
+            Object.keys(contact).map((categorie) => {
+              const { data, icon } = contact[categorie];
+              return data ? (
+                <li class="flex">
+                  <a
+                    href={categorie === "email" ? `mailto:${data}` : data}
+                    class="flex items-center"
+                  >
+                    <img
+                      src={icon}
+                      alt={categorie}
+                      title={data}
+                      class="icon svg"
+                    />
+                    <span itemprop={contact[categorie]}>{/*data*/}</span>
+                  </a>
+                </li>
+              ) : null;
+            })
+          }
+          {
+            profiles.map((profile) => (
+              <li class="flex items-center">
+                <a
+                  href={profile.url}
+                  target="_blank"
+                  rel="noopener"
+                  class="flex items-center"
+                  aria-label={`${name} on ${profile.network}`}
+                >
+                  <img
+                    src={profile.icon}
+                    alt={profile.network}
+                    title={profile.network}
+                    class="icon svg"
+                  />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": [
+    {
+      "@value": "Portafolio",
+      "@language": "es"
+    },
+    {
+      "@value": "Portfolio",
+      "@language": "en"
+    }
+  ],
+  "url": "https://danielpaez.dev",
+  "thumbnailUrl": "https://danielpaez.dev/public/images/portfolio.webp",
+  "keywords": [
+    "Astro",
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "HTML",
+    "Vercel",
+    "Figma",
+    "Markdown"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "Daniel Andrés Páez Rojas"
+  }
+}
