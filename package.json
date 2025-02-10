@@ -3,12 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky install",
-    "lint": "eslint . --ext .js,.jsx,.astro,.ts,.tsx,.mdx",
+    "lint": "eslint . --ext .js,.jsx,.astro,.mdx",
     "format": "prettier --write .",
     "test": "echo \"No tests specified\""
   },
@@ -16,11 +17,9 @@
     "@astrojs/mdx": "^4.0.8",
     "@astrojs/react": "^4.2.0",
     "@astrojs/vercel": "^8.0.6",
-    "@tailwindcss/vite": "^4.0.4",
+    "@tailwindcss/vite": "^4.0.5",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "@typescript-eslint/eslint-plugin": "^8.23.0",
-    "@typescript-eslint/parser": "^8.23.0",
     "aos": "^2.3.4",
     "astro": "^5.2.5",
     "eslint": "^9.20.0",
@@ -32,11 +31,10 @@
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.4"
+    "react-dom": "^19.0.0"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,astro,mdx}": [
+    "*.{js,jsx,astro,mdx}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -45,7 +43,10 @@
     ]
   },
   "devDependencies": {
-    "prettier-plugin-astro": "^0.14.1"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "tailwindcss": "^4.0.5"
   },
   "prettier": {
     "plugins": [

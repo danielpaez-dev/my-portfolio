@@ -1,5 +1,8 @@
 # Astro Starter Kit: Basics
 
+ICONOS EN TABLER ICON'S
+TODO: WEBP Meta
+
 ```sh
 npm create astro@latest -- --template basics
 ```

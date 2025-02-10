@@ -1,0 +1,269 @@
+{
+  "basics": {
+    "name": "Daniel Andrés Páez Rojas",
+    "role": "Frontend developer",
+    "image": "./src/assets/images/me.webp",
+    "url": "https://danielpaez.dev",
+    "summary": "Frontend developer with experience creating efficient and optimal and aesthetic web applications",
+    "shareTitle": "Daniel Páez's portfolio, front-end developer",
+    "contact": {
+      "email": {
+        "data": "danielpaez.dev@proton.me",
+        "icon": "./icons/email.svg"
+      },
+      "phone": {
+        "data": "",
+        "icon": "./icons/phone.svg"
+      }
+    },
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Gijón",
+      "countryCode": "ES",
+      "region": "Spain",
+      "icon": "./icons/world.svg",
+      "url": "https://maps.app.goo.gl/6B9V5ANRPmZjN1467"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "danielpaez-dev",
+        "url": "https://www.linkedin.com/in/danielpaez-dev",
+        "icon": "./icons/linkedin.svg"
+      },
+      {
+        "network": "GitHub",
+        "username": "danielpaez-dev",
+        "url": "https://github.com/danielpaez-dev",
+        "icon": "./icons/github.svg"
+      },
+      {
+        "network": "Leetcode",
+        "username": "danielpaez-dev",
+        "url": "https://leetcode.com/u/danielpaez-dev/",
+        "icon": "./icons/leetcode.svg"
+      }
+    ]
+  },
+  "about me": {
+    "icon": ":bust_in_silhouette:",
+    "description": "Passionate frontend developer with with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
+  },
+  "work experience": [
+    {
+      "icon": ":briefcase:",
+      "name": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "volunteer": [
+    {
+      "icon": ":handshake:",
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "icon": ":mortar_board:",
+      "institution": "",
+      "url": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "icon": ":trophy:",
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "icon": ":scroll:",
+      "name": "Meta Front-End Developer",
+      "date": "December 30, 2024",
+      "issuer": "Coursera",
+      "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
+      "credential_id": "W9PILWS59SMQ",
+      "summary": "I completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Git",
+        "GitHub",
+        "Responsive Design",
+        "Figma"
+      ],
+      "image": ""
+    }
+  ],
+  "publications": [
+    {
+      "icon": ":newspaper:",
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+  "skills": {
+    "icon": "hammer_and_wrench",
+    "list": [
+      {
+        "name": "HTML",
+        "keywords": ["Web development", "Frontend"],
+        "icon": "./icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "keywords": ["Web development", "Frontend", "Diseño Responsive"],
+        "icon": "./icons/css.svg"
+      },
+      {
+        "name": "SCSS",
+        "keywords": ["Web development", "Frontend", "UI"],
+        "icon": "./icons/sass.svg"
+      },
+      {
+        "name": "JavaScript",
+        "keywords": ["Web development", "Frontend", "Backend", "Fullstack"],
+        "icon": "./icons/javascript.svg"
+      },
+      {
+        "name": "Tailwind",
+        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "icon": "./icons/tailwind.svg"
+      },
+      {
+        "name": "Bootstrap",
+        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "icon": "./icons/bootstrap.svg"
+      },
+      {
+        "name": "TypeScript",
+        "keywords": ["Web development", "Frontend", "Backend"],
+        "icon": "./icons/typescript.svg"
+      },
+      {
+        "name": "MySQL",
+        "keywords": ["Bases de Datos", "SQL", "Database"],
+        "icon": "./icons/mysql.svg"
+      },
+      {
+        "name": "Python",
+        "keywords": ["Backend", "Scripting", "Data Science"],
+        "icon": "./icons/python.svg"
+      },
+      {
+        "name": "Django",
+        "keywords": ["Web development", "Backend", "Python"],
+        "icon": "./icons/django.svg"
+      },
+      {
+        "name": "Git",
+        "keywords": ["Version control", "Colaboración"],
+        "icon": "./icons/git.svg"
+      },
+      {
+        "name": "GitHub",
+        "keywords": ["Version control", "Collaboration"],
+        "icon": "./icons/github.svg"
+      },
+      {
+        "name": "React",
+        "keywords": ["Web development", "Frontend", "JavaScript Library"],
+        "icon": "./icons/react.svg"
+      },
+      {
+        "name": "Astro",
+        "keywords": ["Web development", "Frontend"],
+        "icon": "./icons/astro.svg"
+      },
+      {
+        "name": "Figma",
+        "keywords": ["UI/UX Design", "Prototyping"],
+        "icon": "./icons/figma.svg"
+      },
+      {
+        "name": "Vercel",
+        "keywords": ["Deployment", "Web Hosting"],
+        "icon": "./icons/vercel.svg"
+      },
+      {
+        "name": "Markdown",
+        "keywords": ["Documentation", "Content Writing"],
+        "icon": "./icons/markdown.svg"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker",
+      "icon": "./icons/spain.svg"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced",
+      "icon": "./icons/uk.svg"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": ["", ""]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "image": "",
+      "reference": ""
+    }
+  ],
+  "projects": {
+    "icon": ":bust_in_silhouette:",
+    "list": [
+      {
+        "name": "Portfolio",
+        "description": "",
+        "highlights": [""],
+        "url": "https://danielpaez.dev",
+        "githubURL": "",
+        "image": "/public/images/portfolio.webp",
+        "keywords": [
+          "Astro",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "HTML",
+          "Vercel",
+          "Figma",
+          "Markdown"
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,9 @@
 ---
-let lang = "en";
-let description = "Daniel Páez's portfolio";
+import { lang } from "../i18n/utils/utils.ts";
+import { basics } from "@data/en.json";
+import personData from "../data/json-ld-person.json";
+import portfolioData from "../data/json-ld-creativework.json";
+const { name, image, summary, url, shareTitle } = basics;
 ---
 
 <!doctype html>
@@ -8,23 +11,35 @@ let description = "Daniel Páez's portfolio";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
-    <meta name="author" content="Daniel Andrés Páez Rojas" />
-    <!-- Open graph -->
-    <meta property="og:title" content="Portfolio de Daniel Páez" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://danielpaez.dev" />
-    <meta property="og:image" content="https://danielpaez.dev/og-image.jpg" />
-    <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="Daniel Páez" />
-    <meta property="og:locale" content="en_US" />
-    <!-- Twitter -->
+    <meta name="description" content={summary} />
+    <meta name="author" content={name} />
+    <!-- Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(personData)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(portfolioData)}
+    />
 
-    <!-- Favicon -->
-    <title>Daniel Páez</title>
+    <!-- Open graph -->
+    <meta property="og:title" content={shareTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+    <meta property="og:description" content={summary} />
+    <meta property="og:site_name" content={name} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={shareTitle} />
+    <meta name="twitter:description" content={summary} />
+    <meta name="twitter:image" content={image} />
+    <title>{name}</title>
   </head>
+
   <body>
     <slot />
   </body>
