@@ -1,8 +1,14 @@
 ---
 import { lang } from "../i18n/utils/utils.ts";
-import { basics } from "@data/en.json";
 import personData from "../data/json-ld-person.json";
 import portfolioData from "../data/json-ld-creativework.json";
+import { translations } from "@/i18n/utils/utils";
+const translationsModule = translations as {
+  default: {
+    basics: any;
+  };
+};
+const { basics } = translationsModule.default;
 const { name, image, summary, url, shareTitle } = basics;
 ---
 

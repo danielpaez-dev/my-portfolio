@@ -1,15 +1,8 @@
 ---
-import { lang } from "../i18n/utils/utils.ts";
-import "../styles/global.css";
 import { Image } from "astro:assets";
 import Me from "../assets/images/me.webp";
-let basics;
-if (lang === "es") {
-  basics = await import("@data/es.json").then((module) => module.basics);
-} else {
-  basics = await import("@data/en.json").then((module) => module.basics);
-}
-const { image, name, summary, location, contact, profiles } = basics;
+const { basics } = Astro.props;
+const { name, summary, location, contact, profiles } = basics;
 ---
 
 <section>

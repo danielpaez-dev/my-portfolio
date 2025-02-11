@@ -1,9 +1,20 @@
-type Language = "en" | "es";
+type Language = string;
+
+const locales = import.meta.glob("../locales/*.json", { eager: true });
+
+const availableLanguages = Object.keys(locales).map(
+  (path) => path.match(/([\w-]+)\.json$/)![1],
+);
 
 export const getInitialLang = (): Language => {
+  let detectedLang: Language | null = null;
   if (typeof localStorage !== "undefined" && localStorage.getItem("lang")) {
-    return localStorage.getItem("lang") as Language;
+    detectedLang = localStorage.getItem("lang")!;
+  } else {
+    detectedLang = navigator.language.split("-")[0];
   }
-  return navigator.language.split("-")[0] === "es" ? "es" : "en";
+  return availableLanguages.includes(detectedLang) ? detectedLang : "";
 };
+
 export const lang = getInitialLang();
+export const translations = locales[`../locales/${lang}.json`];

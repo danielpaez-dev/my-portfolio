@@ -2,12 +2,45 @@
 import "../styles/global.css";
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
+import { translations } from "@/i18n/utils/utils";
+const translationsModule = translations as {
+  default: {
+    basics: any;
+    "about me": any;
+    "work experience": any;
+    volunteer: any;
+    education: any;
+    awards: any;
+    certificates: any;
+    publications: any;
+    skills: any;
+    languages: any;
+    interests: any;
+    references: any;
+    projects: any;
+  };
+};
+const {
+  basics,
+  "about me": aboutMe,
+  "work experience": workExperience,
+  volunteer,
+  education,
+  awards,
+  certificates,
+  publications,
+  skills,
+  languages,
+  interests,
+  references,
+  projects,
+} = translationsModule.default;
 ---
 
 <Layout>
   <div
     class="container mx-auto flex flex-col items-center justify-center p-6 md:p-16"
   >
-    <Hero />
+    <Hero basics={basics} />
   </div>
 </Layout>
