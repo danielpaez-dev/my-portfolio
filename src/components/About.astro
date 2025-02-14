@@ -1,0 +1,15 @@
+---
+const { data } = Astro.props;
+---
+
+<section
+  id={data.title}
+  aria-labelledby="about-heading"
+  itemscope
+  itemtype="https://schema.org/AboutPage"
+  class="margin-bottom"
+>
+  <h2 id="projects-heading" itemprop="name">{data.title}</h2>
+  <hr />
+  <p itemprop="description">{data.description}</p>
+</section>

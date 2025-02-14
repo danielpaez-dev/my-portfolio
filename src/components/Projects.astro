@@ -14,9 +14,11 @@ const skills = data[1];
   aria-labelledby="projects-heading"
   itemscope
   itemtype="https://schema.org/CollectionPage"
+  class="margin-bottom"
 >
   <h2 id="projects-heading">{projects.title}</h2>
-  <div class="container grid gap-3 lg:grid-cols-2" role="list">
+  <hr />
+  <div class="container grid gap-3 2xl:grid-cols-2" role="list">
     {
       projects &&
         projects.list &&
@@ -27,6 +29,7 @@ const skills = data[1];
             role="listitem"
             itemscope
             itemtype="https://schema.org/SoftwareApplication"
+            itemprop="hasPart"
           >
             <meta
               itemprop="applicationCategory"

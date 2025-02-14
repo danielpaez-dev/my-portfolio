@@ -1,0 +1,39 @@
+---
+const { data } = Astro.props;
+---
+
+<section
+  aria-labelledby="certifications-heading"
+  itemscope
+  itemtype="https://schema.org/CollectionPage"
+>
+  <h2>{data.title}</h2>
+  <hr />
+  <div class="container">
+    {
+      data &&
+        data.list &&
+        data.list.length > 0 &&
+        data.list.map((courses) => (
+          <div role="listitem" itemscope>
+            <div class="flex justify-between">
+              <h3>
+                <a
+                  href={courses.credential_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {courses.name}
+                </a>
+                <span>({courses.score})</span>
+              </h3>
+              <span>{courses.date}</span>
+            </div>
+            <ul class="bull">
+              <li>{courses.summary}</li>
+            </ul>
+          </div>
+        ))
+    }
+  </div>
+</section>

@@ -47,11 +47,12 @@
       }
     ]
   },
-  "about me": {
+  "about": {
+    "title": "About Me",
     "icon": ":bust_in_silhouette:",
     "description": "Passionate frontend developer with with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
   },
-  "work experience": {
+  "experience": {
     "title": "Experience",
     "list": [
       {
@@ -100,28 +101,32 @@
       "summary": ""
     }
   ],
-  "certificates": [
-    {
-      "icon": ":scroll:",
-      "name": "Meta Front-End Developer",
-      "date": "December 30, 2024",
-      "issuer": "Coursera",
-      "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
-      "credential_id": "W9PILWS59SMQ",
-      "summary": "I completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
-      "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Git",
-        "GitHub",
-        "Responsive Design",
-        "Figma"
-      ],
-      "image": ""
-    }
-  ],
+  "certificates": {
+    "icon": ":scroll:",
+    "title": "Certificados",
+    "list": [
+      {
+        "name": "Meta Front-End Developer",
+        "date": "December 30, 2024",
+        "score": "9.68",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
+        "credential_id": "W9PILWS59SMQ",
+        "summary": "I completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Git",
+          "GitHub",
+          "Responsive Design",
+          "Figma"
+        ],
+        "image": ""
+      }
+    ]
+  },
   "publications": [
     {
       "icon": ":newspaper:",
@@ -266,7 +271,7 @@
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
-        "image": "/public/images/portfolio.webp",
+        "image": "",
         "keywords": [
           "Astro",
           "React",

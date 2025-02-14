@@ -2,14 +2,16 @@
 import "../styles/global.css";
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
+import About from "@/components/About.astro";
 import Projects from "@/components/Projects.astro";
+import CoursesAndCertifications from "@/components/CoursesAndCertifications.astro";
 import Skills from "@/components/Skills.astro";
 import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
     basics: any;
-    "about me": any;
-    "work experience": any;
+    about: any;
+    experience: any;
     volunteer: any;
     education: any;
     awards: any;
@@ -24,8 +26,8 @@ const translationsModule = translations as {
 };
 const {
   basics = {},
-  "about me": aboutMe = {},
-  "work experience": workExperience = {},
+  about: about = {},
+  experience: experience = {},
   volunteer = {},
   education = {},
   awards = {},
@@ -41,14 +43,12 @@ const {
 
 <Layout>
   <div
-    class="container mx-auto flex flex-col items-center justify-center gap-y-8 p-6 md:p-16"
+    class="container mx-auto flex flex-col items-center justify-center gap-y-8 p-6 md:p-20 xl:px-75"
   >
     {basics.name && <Hero data={basics} />}
-    {
-      projects.list && projects.list.length > 0 && (
-        <Projects data={[projects, skills]} />
-      )
-    }
+    {about.title && <About data={about} />}
+    {projects.list && <Projects data={[projects, skills]} />}
+    {certificates.list && <CoursesAndCertifications data={certificates} />}
     {skills.list && <Skills data={skills} />}
   </div>
 </Layout>
