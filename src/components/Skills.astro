@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import SkillBadge from "./SkillBadge.astro";
+
+const { data } = Astro.props;
+const skills = data;
+console.log(skills);
+---
+
+<section>
+  <h2>Skills</h2>
+  <div class="container">
+    {
+      skills &&
+        skills.list &&
+        skills.list.length > 0 &&
+        skills.list.map((skillData) => (
+          <SkillBadge
+            name={skillData.name}
+            icon={skillData.icon}
+            key={skillData.name}
+          />
+        ))
+    }
+  </div>
+</section>

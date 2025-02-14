@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/Hero.astro";
 import Projects from "@/components/Projects.astro";
+import Skills from "@/components/Skills.astro";
 import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
@@ -48,5 +49,6 @@ const {
         <Projects data={[projects, skills]} />
       )
     }
+    {skills.list && <Skills data={skills} />}
   </div>
 </Layout>
