@@ -51,18 +51,21 @@
     "icon": ":bust_in_silhouette:",
     "description": "Passionate frontend developer with with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
   },
-  "work experience": [
-    {
-      "icon": ":briefcase:",
-      "name": "",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
-    }
-  ],
+  "work experience": {
+    "title": "Experience",
+    "list": [
+      {
+        "icon": ":briefcase:",
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": "",
+        "endDate": "",
+        "summary": "",
+        "highlights": [""]
+      }
+    ]
+  },
   "volunteer": [
     {
       "icon": ":handshake:",
@@ -130,6 +133,7 @@
     }
   ],
   "skills": {
+    "title": "Skills",
     "icon": "hammer_and_wrench",
     "list": [
       {
@@ -224,18 +228,21 @@
       }
     ]
   },
-  "languages": [
-    {
-      "language": "Spanish",
-      "fluency": "Native speaker",
-      "icon": "./icons/spain.svg"
-    },
-    {
-      "language": "English",
-      "fluency": "Advanced",
-      "icon": "./icons/uk.svg"
-    }
-  ],
+  "languages": {
+    "title": "Languages",
+    "list": [
+      {
+        "language": "Spanish",
+        "fluency": "native",
+        "icon": "./icons/spain.svg"
+      },
+      {
+        "language": "English",
+        "fluency": "advanced",
+        "icon": "./icons/uk.svg"
+      }
+    ]
+  },
   "interests": [
     {
       "name": "",
@@ -250,6 +257,7 @@
     }
   ],
   "projects": {
+    "title": "Projects",
     "icon": ":bust_in_silhouette:",
     "list": [
       {

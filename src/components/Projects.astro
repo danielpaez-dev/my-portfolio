@@ -9,24 +9,42 @@ const projects = data[0];
 const skills = data[1];
 ---
 
-<section>
-  <h2>Projects</h2>
-  <div class="container grid gap-3 lg:grid-cols-2">
+<section
+  id={projects.title}
+  aria-labelledby="projects-heading"
+  itemscope
+  itemtype="https://schema.org/CollectionPage"
+>
+  <h2 id="projects-heading">{projects.title}</h2>
+  <div class="container grid gap-3 lg:grid-cols-2" role="list">
     {
       projects &&
         projects.list &&
         projects.list.length > 0 &&
         projects.list.map((projectData) => (
-          <div class="block rounded-lg border border-gray-200">
+          <div
+            class="block rounded-lg border border-gray-200"
+            role="listitem"
+            itemscope
+            itemtype="https://schema.org/SoftwareApplication"
+          >
+            <meta
+              itemprop="applicationCategory"
+              content="Software Development"
+            />
+            <div hidden itemprop="keywords">
+              {projectData.keywords?.join(", ")}
+            </div>
             <div class="relative grid grid-cols-[auto_auto]">
               <div>
                 {projectData.image?.trim() && (
                   <Image
                     class="h-full w-32 rounded-s-lg object-cover sm:w-48"
-                    height={16}
-                    width={16}
+                    height={160}
+                    width={160}
                     src={projectData.image}
                     alt={projectData.name}
+                    itemprop="image"
                   />
                 )}
               </div>
@@ -38,13 +56,16 @@ const skills = data[1];
                         href={projectData.url}
                         target="_blank"
                         class="flex gap-1.5 font-semibold text-gray-800 dark:text-neutral-300"
+                        aria-label={`Visit ${projectData.name} project website`}
+                        itemprop="url"
                       >
-                        <h3>{projectData.name}</h3>
+                        <h3 itemprop="name">{projectData.name}</h3>
                         <Image
                           src={LinkIcon}
-                          alt="Link Icon"
+                          alt=""
                           width={16}
                           height={16}
+                          aria-hidden="true"
                           style="width:16px; height:16px;"
                         />
                       </a>
@@ -54,24 +75,34 @@ const skills = data[1];
                         href={projectData.githubURL}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View ${projectData.name} source code on GitHub`}
+                        itemprop="codeRepository"
                       >
                         <Image
                           src={GitHubIcon}
-                          alt="GitHub Icon"
+                          alt={`Go to ${projectData.name}`}
+                          title={`Go to ${projectData.name}`}
                           width={20}
                           height={20}
-                          title={`${projectData.name} GitHub`}
+                          aria-hidden="true"
                           style="width:20px; height:20px;"
                         />
                       </a>
                     )}
                   </div>
                   {projectData.description?.trim() && (
-                    <p class="mt-1 text-sm text-pretty text-gray-500 dark:text-neutral-500">
+                    <p
+                      class="mt-1 text-sm text-pretty text-gray-500 dark:text-neutral-500"
+                      itemprop="description"
+                    >
                       {projectData.description}
                     </p>
                   )}
-                  <div class="flex flex-row flex-wrap items-center">
+                  <div
+                    class="flex flex-row flex-wrap items-center"
+                    role="list"
+                    aria-label="Technologies used"
+                  >
                     {skills &&
                       skills.list &&
                       skills.list.length > 0 &&
@@ -86,6 +117,7 @@ const skills = data[1];
                             name={skillData.name}
                             icon={skillData.icon}
                             key={skillData.name}
+                            role="listitem"
                           />
                         ))}
                   </div>

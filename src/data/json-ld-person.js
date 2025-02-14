@@ -29,9 +29,10 @@ const jsonLdPerson = {
   },
   knowsAbout:
     skills && skills.list ? skills.list.map((skill) => skill.name) : [],
-  knowsLanguage: languages
-    ? languages.map((langItem) => langItem.language)
-    : [],
+  knowsLanguage:
+    languages && languages.list
+      ? languages.list.map((langItem) => langItem.language)
+      : [],
   contactPoint: {
     "@type": "ContactPoint",
     ...(basics.contact.email.data && { email: basics.contact.email.data }),

@@ -51,18 +51,21 @@
     "icon": ":bust_in_silhouette:",
     "description": "Desarrollador frontend apasionado con experiencia en la creación de aplicaciones web eficientes y óptimas. Actualmente trabajando en una aplicación web minesweeper typescript."
   },
-  "work experience": [
-    {
-      "icon": ":briefcase:",
-      "name": "",
-      "position": "",
-      "url": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [""]
-    }
-  ],
+  "work experience": {
+    "title": "Experiencia",
+    "list": [
+      {
+        "icon": ":briefcase:",
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": "",
+        "endDate": "",
+        "summary": "",
+        "highlights": [""]
+      }
+    ]
+  },
   "volunteer": [
     {
       "icon": ":handshake:",
@@ -130,6 +133,7 @@
     }
   ],
   "skills": {
+    "title": "Destrezas",
     "icon": "hammer_and_wrench",
     "list": [
       {
@@ -219,18 +223,21 @@
       }
     ]
   },
-  "languages": [
-    {
-      "language": "Español",
-      "fluency": "nativo",
-      "icon": "./icons/spain.svg"
-    },
-    {
-      "language": "Inglés",
-      "fluency": "avanzado",
-      "icon": "./icons/uk.svg"
-    }
-  ],
+  "languages": {
+    "title": "Idiomas",
+    "list": [
+      {
+        "language": "Español",
+        "fluency": "nativo",
+        "icon": "./icons/spain.svg"
+      },
+      {
+        "language": "Inglés",
+        "fluency": "avanzado",
+        "icon": "./icons/uk.svg"
+      }
+    ]
+  },
   "interests": [
     {
       "name": "",
@@ -245,6 +252,7 @@
     }
   ],
   "projects": {
+    "title": "Proyectos",
     "icon": ":bust_in_silhouette:",
     "list": [
       {
