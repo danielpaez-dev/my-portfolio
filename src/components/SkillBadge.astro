@@ -1,0 +1,18 @@
+---
+const { name } = Astro.props;
+const { icon } = Astro.props;
+---
+
+<span
+  class="btn dark:bg- hover:bg- my-0.75 me-1.5 transform rounded-full bg-gray-100 px-2.5 py-0.5 font-medium text-gray-800 dark:text-gray-300"
+>
+  <img
+    src={icon}
+    alt={name}
+    title={name}
+    class="mr-1.5 inline-block"
+    width={16}
+    height={16}
+    style="width:16px; height:16px;"
+  />{name}
+</span>

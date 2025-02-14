@@ -1,7 +1,7 @@
 ---
 import { lang } from "../i18n/utils/utils.ts";
-import personData from "../data/json-ld-person.json";
-import portfolioData from "../data/json-ld-creativework.json";
+import personData from "../data/json-ld-person.js";
+import portfolioData from "../data/json-ld-creativework.js";
 import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
@@ -34,7 +34,7 @@ const { name, image, summary, url, shareTitle } = basics;
     <meta property="og:image" content={image} />
     <meta property="og:description" content={summary} />
     <meta property="og:site_name" content={name} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={lang} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

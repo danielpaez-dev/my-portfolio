@@ -1,8 +1,9 @@
 {
+  "lang": "es",
   "basics": {
     "name": "Daniel Andrés Páez Rojas",
     "role": "Desarrollador frontend",
-    "image": "./images/me.webp",
+    "image": "./src/assets/images/me.webp",
     "url": "https://danielpaez.dev",
     "summary": "Desarrollador frontend con experiencia en la creación de aplicaciones web eficientes, óptimas y estéticas.",
     "shareTitle": "Portfolio de Daniel Páez, desarrollador front-end",
@@ -248,14 +249,64 @@
     "list": [
       {
         "name": "Portafolio",
-        "description": "",
+        "description": "Plantilla de portfolio minimalista con un CV.pdf automatizado, documentación y traducción",
         "highlights": [""],
         "url": "https://danielpaez.dev",
-        "githubURL": "",
+        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "/public/images/portfolio.webp",
         "keywords": [
           "Astro",
-          "React",
+          "TypeScript",
+          "Tailwind",
+          "HTML",
+          "Vercel",
+          "Figma",
+          "Markdown"
+        ]
+      },
+      {
+        "name": "Portafolio",
+        "description": "Plantilla de portfolio minimalista con un CV.pdf automatizado, documentación y traducción",
+        "highlights": [""],
+        "url": "https://danielpaez.dev",
+        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
+        "image": "/public/images/portfolio.webp",
+        "keywords": [
+          "Astro",
+          "TypeScript",
+          "Tailwind",
+          "HTML",
+          "Vercel",
+          "Figma",
+          "Markdown"
+        ]
+      },
+      {
+        "name": "Portafolio",
+        "description": "Plantilla de portfolio minimalista con un CV.pdf automatizado, documentación y traducción",
+        "highlights": [""],
+        "url": "https://danielpaez.dev",
+        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
+        "image": "/public/images/portfolio.webp",
+        "keywords": [
+          "Astro",
+          "TypeScript",
+          "Tailwind",
+          "HTML",
+          "Vercel",
+          "Figma",
+          "Markdown"
+        ]
+      },
+      {
+        "name": "Portafolio",
+        "description": "Plantilla de portfolio minimalista con un CV.pdf automatizado, documentación y traducción",
+        "highlights": [""],
+        "url": "https://danielpaez.dev",
+        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
+        "image": "/public/images/portfolio.webp",
+        "keywords": [
+          "Astro",
           "TypeScript",
           "Tailwind",
           "HTML",

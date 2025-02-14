@@ -1,4 +1,5 @@
 {
+  "lang": "en",
   "basics": {
     "name": "Daniel Andrés Páez Rojas",
     "role": "Frontend developer",
@@ -167,6 +168,11 @@
         "icon": "./icons/typescript.svg"
       },
       {
+        "name": "SQL",
+        "keywords": ["Bases de Datos", "SQL", "Database"],
+        "icon": "./icons/sql.svg"
+      },
+      {
         "name": "MySQL",
         "keywords": ["Bases de Datos", "SQL", "Database"],
         "icon": "./icons/mysql.svg"
@@ -248,10 +254,10 @@
     "list": [
       {
         "name": "Portfolio",
-        "description": "",
+        "description": "A minimalist portfolio template with an automated CV.pdf export, documentation and translation",
         "highlights": [""],
         "url": "https://danielpaez.dev",
-        "githubURL": "",
+        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "/public/images/portfolio.webp",
         "keywords": [
           "Astro",

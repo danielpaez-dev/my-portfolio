@@ -1,0 +1,99 @@
+---
+import { Image } from "astro:assets";
+import LinkIcon from "@icon/link.svg";
+import GitHubIcon from "@icon/github.svg";
+import SkillBadge from "./SkillBadge.astro";
+
+const { data } = Astro.props;
+const projects = data[0];
+const skills = data[1];
+---
+
+<section>
+  <h2>Projects</h2>
+  <div class="container grid gap-3 lg:grid-cols-2">
+    {
+      projects &&
+        projects.list &&
+        projects.list.length > 0 &&
+        projects.list.map((projectData) => (
+          <div class="block rounded-lg border border-gray-200">
+            <div class="relative grid grid-cols-[auto_auto]">
+              <div>
+                {projectData.image?.trim() && (
+                  <Image
+                    class="h-full w-32 rounded-s-lg object-cover sm:w-48"
+                    height={16}
+                    width={16}
+                    src={projectData.image}
+                    alt={projectData.name}
+                  />
+                )}
+              </div>
+              <div class="grow p-4">
+                <div class="flex min-h-24 flex-col justify-center text-pretty break-words">
+                  <div class="flex justify-between">
+                    {projectData.url?.trim() && projectData.name?.trim() && (
+                      <a
+                        href={projectData.url}
+                        target="_blank"
+                        class="flex gap-1.5 font-semibold text-gray-800 dark:text-neutral-300"
+                      >
+                        <h3>{projectData.name}</h3>
+                        <Image
+                          src={LinkIcon}
+                          alt="Link Icon"
+                          width={16}
+                          height={16}
+                          style="width:16px; height:16px;"
+                        />
+                      </a>
+                    )}
+                    {projectData.githubURL?.trim() && (
+                      <a
+                        href={projectData.githubURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={GitHubIcon}
+                          alt="GitHub Icon"
+                          width={20}
+                          height={20}
+                          title={`${projectData.name} GitHub`}
+                          style="width:20px; height:20px;"
+                        />
+                      </a>
+                    )}
+                  </div>
+                  {projectData.description?.trim() && (
+                    <p class="mt-1 text-sm text-pretty text-gray-500 dark:text-neutral-500">
+                      {projectData.description}
+                    </p>
+                  )}
+                  <div class="flex flex-row flex-wrap items-center">
+                    {skills &&
+                      skills.list &&
+                      skills.list.length > 0 &&
+                      skills.list
+                        .filter(
+                          (skillData) =>
+                            projectData.keywords &&
+                            projectData.keywords.includes(skillData.name),
+                        )
+                        .map((skillData) => (
+                          <SkillBadge
+                            name={skillData.name}
+                            icon={skillData.icon}
+                            key={skillData.name}
+                          />
+                        ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+    }
+  </div>
+</section>

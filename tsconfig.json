@@ -10,6 +10,7 @@
     "noImplicitAny": false,
     "paths": {
       "@/*": ["src/*"],
+      "@icon/*": ["public/icons/*"],
       "@images/*": ["public/images/*"],
       "@data/*": ["src/i18n/locales/*"]
     }
