@@ -1,0 +1,84 @@
+---
+const { data } = Astro.props;
+const basicInfo = data[0];
+const footer = data[1];
+const email = basicInfo.contact.email;
+const contactKeys = Object.keys(basicInfo.contact);
+import Button from "@components/Button.astro";
+import Send from "@icon/send.svg";
+---
+
+<footer class="flex w-full flex-col gap-y-5" aria-labelledby="footer-heading">
+  <h2>{footer.title}</h2>
+  <hr />
+  <div class="flex w-full items-center">
+    <div class="relative w-full">
+      <label for="npm-install-copy-text" class="sr-only">Label</label>
+      <input
+        type="text"
+        value={email.data}
+        disabled
+        class="block w-full rounded-lg border border-gray-300 bg-gray-50 px-2.5 py-4 text-sm text-gray-500"
+      />
+      <div class="absolute top-1/2 right-2 flex -translate-y-1/2 gap-x-2">
+        <a href={`mailto:${email.data}`}>
+          <Button
+            categorie={contactKeys[0]}
+            data={email.data}
+            icon={Send}
+            class="h-8 w-8 text-sm"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <ul class="flex justify-center">
+    {
+      basicInfo.profiles &&
+        basicInfo.profiles.map((profile) => (
+          <li class="flex items-center">
+            <a
+              href={profile.url}
+              target="_blank"
+              rel="noopener"
+              class="flex items-center"
+              aria-label={`${basicInfo.name} on ${profile.network}`}
+            >
+              {profile.icon && (
+                <img
+                  src={profile.icon}
+                  alt={profile.network}
+                  title={profile.network}
+                  class="icon svg"
+                  width={28}
+                  height={28}
+                  style="width:28px; height:28px;"
+                />
+              )}
+            </a>
+          </li>
+        ))
+    }
+  </ul>
+  <div class="flex justify-center gap-x-1.5 text-2xl">
+    <span>Construido con </span>
+    <img
+      src="/icons/astro.svg"
+      alt="Astro"
+      title="Astro"
+      width={16}
+      height={16}
+    />
+    <span> por </span>
+    <a
+      href={basicInfo.profiles.find((profile) => profile.network === "GitHub")
+        .url}
+      title={basicInfo.profiles.find((profile) => profile.network === "GitHub")
+        .url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Daniel Páez
+    </a>
+  </div>
+</footer>

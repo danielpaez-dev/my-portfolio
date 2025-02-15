@@ -6,6 +6,7 @@ import About from "@/components/About.astro";
 import Projects from "@/components/Projects.astro";
 import CoursesAndCertifications from "@/components/CoursesAndCertifications.astro";
 import Skills from "@/components/Skills.astro";
+import Footer from "@/components/Footer.astro";
 import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
@@ -22,6 +23,7 @@ const translationsModule = translations as {
     interests: any;
     references: any;
     projects: any;
+    footer: any;
   };
 };
 const {
@@ -38,6 +40,7 @@ const {
   interests = {},
   references = {},
   projects = {},
+  footer = {},
 } = translationsModule.default;
 ---
 
@@ -50,5 +53,6 @@ const {
     {projects.list && <Projects data={[projects, skills]} />}
     {certificates.list && <CoursesAndCertifications data={certificates} />}
     {skills.list && <Skills data={skills} />}
+    {basics.name && <Footer data={[basics, footer]} />}
   </div>
 </Layout>

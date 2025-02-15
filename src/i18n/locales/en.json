@@ -284,5 +284,8 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "title": "Contact Me"
   }
 }
