@@ -47,7 +47,7 @@ a {
 }
 
 .icon {
-  @apply mr-1.5 transform rounded border border-gray-400 p-1 transition transition-colors duration-200 ease-in-out hover:bg-gray-200;
+  @apply transform rounded border border-gray-400 p-1 transition duration-200 ease-in-out hover:bg-gray-200;
 }
 
 li {
@@ -61,3 +61,27 @@ li {
 hr {
   @apply mb-3 w-full border;
 }
+
+.active {
+  @apply transform rounded-4xl bg-gray-200 p-1 transition-colors duration-200 ease-in-out;
+}
+
+.active Button {
+  fill: black;
+}
+
+/* KeyboardManager */
+#hotkeypad [data-container] {
+  transform: translate(-50%, -200%) !important;
+}
+
+div[data-section="social"] h4,
+div[data-section="actions"] h4 {
+  display: flex;
+}
+div[data-section="social"],
+div[data-section="actions"] {
+  text-align: left;
+}
+
+/* Print */

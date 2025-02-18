@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
 import Layout from "@/layouts/Layout.astro";
-import Hero from "@/components/Hero.astro";
-import About from "@/components/About.astro";
-import Projects from "@/components/Projects.astro";
-import CoursesAndCertifications from "@/components/CoursesAndCertifications.astro";
-import Skills from "@/components/Skills.astro";
-import Footer from "@/components/Footer.astro";
+import Hero from "@components/Hero.astro";
+import About from "@components/About.astro";
+import Projects from "@components/Projects.astro";
+import CoursesAndCertifications from "@components/CoursesAndCertifications.astro";
+import Nav from "@components/Nav.astro";
+import Skills from "@components/Skills.astro";
+import Footer from "@components/Contact.astro";
 import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
@@ -24,6 +25,7 @@ const translationsModule = translations as {
     references: any;
     projects: any;
     footer: any;
+    active: Record<string, boolean>;
   };
 };
 const {
@@ -41,6 +43,7 @@ const {
   references = {},
   projects = {},
   footer = {},
+  active = {},
 } = translationsModule.default;
 ---
 
@@ -48,11 +51,16 @@ const {
   <div
     class="container mx-auto flex flex-col items-center justify-center gap-y-8 p-6 md:p-20 xl:px-75"
   >
-    {basics.name && <Hero data={basics} />}
-    {about.title && <About data={about} />}
-    {projects.list && <Projects data={[projects, skills]} />}
-    {certificates.list && <CoursesAndCertifications data={certificates} />}
-    {skills.list && <Skills data={skills} />}
-    {basics.name && <Footer data={[basics, footer]} />}
+    {active.Hero && <Hero data={basics} data-section />}
+    {active.About && <About data={about} data-section />}
+    {active.Projects && <Projects data={[projects, skills]} data-section />}
+    {
+      active.CoursesAndCertifications && (
+        <CoursesAndCertifications data={certificates} data-section />
+      )
+    }
+    {active.Skills && <Skills data={skills} data-section />}
+    {active.Footer && <Footer data={[basics, footer]} data-section />}
+    {active.Nav && <Nav data={active} />}
   </div>
 </Layout>

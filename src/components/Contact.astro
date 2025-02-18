@@ -8,7 +8,11 @@ import Button from "@components/Button.astro";
 import Send from "@icon/send.svg";
 ---
 
-<footer class="flex w-full flex-col" aria-labelledby="footer-heading">
+<section
+  class="flex w-full flex-col"
+  aria-labelledby="footer-heading"
+  id="Footer"
+>
   <h2>{footer.title}</h2>
   <hr />
   <div class="flex flex-col gap-y-5">
@@ -42,7 +46,7 @@ import Send from "@icon/send.svg";
                 href={profile.url}
                 target="_blank"
                 rel="noopener"
-                class="flex items-center"
+                class="mr-1.5 flex items-center"
                 aria-label={`${basicInfo.name} on ${profile.network}`}
               >
                 {profile.icon && (
@@ -84,4 +88,4 @@ import Send from "@icon/send.svg";
       </a>
     </div>
   </div>
-</footer>
+</section>

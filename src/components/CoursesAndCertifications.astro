@@ -3,19 +3,18 @@ const { data } = Astro.props;
 ---
 
 <section
+  id="CoursesAndCertifications"
   aria-labelledby="certifications-heading"
   itemscope
   itemtype="https://schema.org/CollectionPage"
 >
   <h2>{data.title}</h2>
   <hr />
-  <div class="container">
-    {
-      data &&
-        data.list &&
-        data.list.length > 0 &&
-        data.list.map((courses) => (
-          <div role="listitem" itemscope>
+  {
+    data && data.list && data.list.length > 0 && (
+      <div class="container" role="listitem" itemscope class="flex flex-col">
+        {data.list.map((courses) => (
+          <div>
             <div class="flex justify-between">
               <h3>
                 <a
@@ -33,7 +32,8 @@ const { data } = Astro.props;
               <li>{courses.summary}</li>
             </ul>
           </div>
-        ))
-    }
-  </div>
+        ))}
+      </div>
+    )
+  }
 </section>

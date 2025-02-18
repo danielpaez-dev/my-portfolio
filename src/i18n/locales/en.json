@@ -287,5 +287,14 @@
   },
   "footer": {
     "title": "Contact Me"
+  },
+  "active": {
+    "Hero": true,
+    "About": false,
+    "Projects": true,
+    "CoursesAndCertifications": true,
+    "Skills": true,
+    "Footer": true,
+    "Nav": true
   }
 }

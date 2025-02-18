@@ -1,8 +1,7 @@
 ---
-import { lang } from "../i18n/utils/utils.ts";
+import { lang, translations } from "../i18n/utils/utils.ts";
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
-import { translations } from "@/i18n/utils/utils";
 const translationsModule = translations as {
   default: {
     basics: any;
@@ -20,6 +19,27 @@ const { name, image, summary, url, shareTitle } = basics;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={summary} />
     <meta name="author" content={name} />
+
+    <!-- Script para establecer el tema lo antes posible -->
+    <script is:inline>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        let theme;
+        if (storedTheme === "dark" || storedTheme === "light") {
+          theme = storedTheme;
+        } else {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+
     <!-- Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(personData)} />
     <script
@@ -43,6 +63,7 @@ const { name, image, summary, url, shareTitle } = basics;
     <meta name="twitter:title" content={shareTitle} />
     <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content={image} />
+
     <title>{name}</title>
   </head>
 
@@ -50,3 +71,61 @@ const { name, image, summary, url, shareTitle } = basics;
     <slot />
   </body>
 </html>
+
+<style is:global>
+  :root {
+    --bg-color: #ffffff;
+    --text-color: rgba(17, 17, 17, 0.9);
+    --nav-bg: rgb(229, 229, 229);
+    --nav-border: rgba(0, 0, 0);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #101426;
+      --text-color: rgba(255, 255, 255, 0.9);
+      --nav-bg: rgba(0, 0, 0, 0.3);
+      --nav-border: rgba(0, 0, 0);
+    }
+  }
+
+  html.dark {
+    --bg-color: #171717;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --nav-bg: rgba(0, 0, 0, 0.3);
+    --nav-border: rgba(0, 0, 0);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overscroll-behavior: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  span,
+  img,
+  p,
+  a {
+    color: var(--text-color);
+  }
+
+  .svg {
+    color: red;
+    fill: red;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>

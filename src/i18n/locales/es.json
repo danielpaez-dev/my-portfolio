@@ -298,5 +298,14 @@
   },
   "footer": {
     "title": "Contáctame"
+  },
+  "active": {
+    "Hero": true,
+    "About": true,
+    "Projects": true,
+    "CoursesAndCertifications": true,
+    "Skills": true,
+    "Footer": true,
+    "Nav": true
   }
 }

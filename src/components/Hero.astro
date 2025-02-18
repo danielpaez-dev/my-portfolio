@@ -5,7 +5,7 @@ const { data } = Astro.props;
 const basicInfo = { ...data };
 ---
 
-<section>
+<section id="Hero">
   <div class="container">
     <div
       class="info grid h-full grid-flow-row auto-rows-auto items-center text-center md:grid-flow-col md:grid-cols-7 md:text-left"
@@ -54,7 +54,7 @@ const basicInfo = { ...data };
                             src={basicInfo.location.icon}
                             alt={direction}
                             title={direction}
-                            class="svg mr-1.5"
+                            class="icon-dark mr-1.5"
                             width={16}
                             height={16}
                             style="width:16px; height:16px;"
@@ -103,7 +103,7 @@ const basicInfo = { ...data };
                           src={icon}
                           alt={categorie}
                           title={data}
-                          class="icon svg"
+                          class="icon mr-1.5"
                           width={28}
                           height={28}
                           style="width:28px; height:28px;"
@@ -130,7 +130,7 @@ const basicInfo = { ...data };
                         src={profile.icon}
                         alt={profile.network}
                         title={profile.network}
-                        class="icon svg"
+                        class="icon mr-1.5"
                         width={28}
                         height={28}
                         style="width:28px; height:28px;"

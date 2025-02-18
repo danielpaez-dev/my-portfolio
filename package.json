@@ -21,6 +21,7 @@
     "@types/react-dom": "^19.0.3",
     "aos": "^2.3.4",
     "astro": "^5.2.5",
+    "hotkeypad": "^1.0.1",
     "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",

@@ -1,20 +1,28 @@
 ---
 import { Image } from "astro:assets";
-const { categorie, data, icon, onClick } = Astro.props;
+const { categorie, data, icon, onClick, id, dataTheme, classIcon } =
+  Astro.props;
 ---
 
-<button onclick={onClick} class="flex items-center">
+<button
+  onclick={onClick}
+  class="flex items-center"
+  type="button"
+  id={id}
+  data-theme={dataTheme}
+>
   {
     icon && (
       <Image
         src={icon}
         alt={categorie}
         title={data}
-        class="icon svg"
+        class={`icon ${classIcon}`}
         width={28}
         height={28}
-        style="width:28px; height:28px;"
+        style="width:28px; height:28px; border: none;"
       />
     )
   }
+  <span class="sr-only">{categorie}</span>
 </button>

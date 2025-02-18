@@ -2,19 +2,20 @@ type Language = string;
 
 const locales = import.meta.glob("../locales/*.json", { eager: true });
 
-const availableLanguages = Object.keys(locales).map(
-  (path) => path.match(/([\w-]+)\.json$/)![1],
-);
+const availableLanguages: Language[] = Object.keys(locales)
+  .map((path) => {
+    const match = path.match(/([\w-]+)\.json$/);
+    return match ? match[1] : "";
+  })
+  .filter(Boolean);
 
-export const getInitialLang = (): Language => {
-  let detectedLang: Language | null = null;
-  if (typeof localStorage !== "undefined" && localStorage.getItem("lang")) {
-    detectedLang = localStorage.getItem("lang")!;
-  } else {
-    detectedLang = navigator.language.split("-")[0];
-  }
-  return availableLanguages.includes(detectedLang) ? detectedLang : "";
-};
+export function getInitialLang(): Language {
+  const detectedLang = navigator.language.split("-")[0];
+  return availableLanguages.includes(detectedLang)
+    ? detectedLang
+    : availableLanguages[0];
+}
 
-export const lang = getInitialLang();
-export const translations = locales[`../locales/${lang}.json`];
+export let lang: Language = getInitialLang();
+export let translations;
+translations = locales[`../locales/${lang}.json`];
