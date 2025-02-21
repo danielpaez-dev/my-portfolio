@@ -1,0 +1,17 @@
+---
+const { data } = Astro.props;
+const experience = data[0];
+const skills = data[1];
+---
+
+<section
+  id="Projects"
+  aria-labelledby="projects-heading"
+  itemscope
+  itemtype="https://schema.org/CollectionPage"
+>
+  <h2 id="projects-heading">{experience.title}</h2>
+  <hr />
+  <div class="containgrid container grid gap-3 2xl:grid-cols-2" role="list">
+  </div>
+</section>

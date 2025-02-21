@@ -309,6 +309,7 @@
   "active": {
     "Hero": true,
     "About": true,
+    "Experience": true,
     "Projects": true,
     "CoursesAndCertifications": true,
     "Skills": true,

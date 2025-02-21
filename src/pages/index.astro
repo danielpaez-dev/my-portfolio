@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Layout from "@/layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
 import About from "@components/About.astro";
+import Experience from "@components/Experience.astro";
 import Projects from "@components/Projects.astro";
 import CoursesAndCertifications from "@components/CoursesAndCertifications.astro";
 import Nav from "@components/Nav.astro";
@@ -53,6 +54,11 @@ const {
   >
     {active.Hero && <Hero data={basics} data-section />}
     {active.About && <About data={about} data-section />}
+    {
+      active.Experience && (
+        <Experience data={[experience, skills]} data-section />
+      )
+    }
     {active.Projects && <Projects data={[projects, skills]} data-section />}
     {
       active.CoursesAndCertifications && (
