@@ -2,16 +2,52 @@
 const { data } = Astro.props;
 const experience = data[0];
 const skills = data[1];
+import SkillBadge from "./SkillBadge.astro";
 ---
 
 <section
-  id="Projects"
-  aria-labelledby="projects-heading"
+  id="Experience"
+  aria-labelledby="experience-heading"
   itemscope
   itemtype="https://schema.org/CollectionPage"
 >
-  <h2 id="projects-heading">{experience.title}</h2>
+  <h2 id="experience-heading">{experience.title}</h2>
   <hr />
-  <div class="containgrid container grid gap-3 2xl:grid-cols-2" role="list">
+  <div class="container flex flex-col gap-6" role="list">
+    {
+      experience &&
+        experience.list &&
+        experience.list.map((item) => (
+          <div role="listitem" itemscope class="flex flex-col">
+            <div class="flex justify-between">
+              <h3>{item.name}</h3>
+              <span>
+                {item.startDate} - {item.endDate}
+              </span>
+            </div>
+            <h4>
+              <em>{item.position}</em>
+            </h4>
+            <ul class="bull">
+              <li>{item.summary}</li>
+            </ul>
+            <div class="skills">
+              {item.highlights.map((highlight) => {
+                const skill = skills.list.find(
+                  (skill) => skill.name === highlight,
+                );
+                return skill ? (
+                  <SkillBadge
+                    icon={skill.icon}
+                    name={skill.name}
+                    key={skill.name}
+                    role="listitem"
+                  />
+                ) : null;
+              })}
+            </div>
+          </div>
+        ))
+    }
   </div>
 </section>

@@ -57,13 +57,33 @@
     "list": [
       {
         "icon": ":briefcase:",
-        "name": "",
-        "position": "",
-        "url": "",
-        "startDate": "",
-        "endDate": "",
-        "summary": "",
-        "highlights": [""]
+        "name": "Capgemini",
+        "position": "Frontend Developer",
+        "url": "https://www.capgemini.com/es-es/",
+        "startDate": "Enero 2021",
+        "endDate": "Presente",
+        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
+        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
+      },
+      {
+        "icon": ":briefcase:",
+        "name": "Capgemini",
+        "position": "Frontend Developer",
+        "url": "https://www.capgemini.com/es-es/",
+        "startDate": "Enero 2021",
+        "endDate": "Presente",
+        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
+        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
+      },
+      {
+        "icon": ":briefcase:",
+        "name": "Capgemini",
+        "position": "Frontend Developer",
+        "url": "https://www.capgemini.com/es-es/",
+        "startDate": "Enero 2021",
+        "endDate": "Presente",
+        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
+        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
       }
     ]
   },
