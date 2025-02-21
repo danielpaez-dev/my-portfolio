@@ -2,6 +2,7 @@
 import { lang, translations } from "../i18n/utils/utils.ts";
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
+import favicon from "../../public/favicon.ico";
 const translationsModule = translations as {
   default: {
     basics: any;
@@ -19,6 +20,7 @@ const { name, image, summary, url, shareTitle } = basics;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={summary} />
     <meta name="author" content={name} />
+    <link rel="icon" href={favicon} type="image/svg+xml" />
 
     <!-- Script para establecer el tema lo antes posible -->
     <script is:inline>

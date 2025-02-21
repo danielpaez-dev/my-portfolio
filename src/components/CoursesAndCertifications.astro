@@ -12,9 +12,9 @@ const { data } = Astro.props;
   <hr />
   {
     data && data.list && data.list.length > 0 && (
-      <div class="container" role="listitem" itemscope class="flex flex-col">
+      <div class="container" role="list" itemscope class="flex flex-col">
         {data.list.map((courses) => (
-          <div>
+          <div role="listitem">
             <div class="flex justify-between">
               <h3>
                 <a

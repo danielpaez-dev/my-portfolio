@@ -103,7 +103,7 @@
   ],
   "certificates": {
     "icon": ":scroll:",
-    "title": "Certificados",
+    "title": "Certificates",
     "list": [
       {
         "name": "Meta Front-End Developer",
@@ -287,6 +287,13 @@
   },
   "footer": {
     "title": "Contact Me"
+  },
+  "command": {
+    "command": "command",
+    "icon": "./icons/print.svg",
+    "actions": "acciones",
+    "social": "redes sociales",
+    "action": "Print"
   },
   "active": {
     "Hero": true,

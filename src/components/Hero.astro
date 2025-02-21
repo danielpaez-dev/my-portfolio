@@ -8,20 +8,20 @@ const basicInfo = { ...data };
 <section id="Hero">
   <div class="container">
     <div
-      class="info grid h-full grid-flow-row auto-rows-auto items-center text-center md:grid-flow-col md:grid-cols-7 md:text-left"
+      class="info grid h-full grid-flow-row auto-rows-auto items-center text-center"
     >
       {
         basicInfo.name && (
           <Image
             src={Me}
             alt={basicInfo.name}
-            class="order-1 col-span-2 col-start-2 mx-auto h-50 w-50 max-w-xs justify-self-center rounded-3xl object-cover md:order-last md:col-span-2 md:col-start-6"
+            class="noprint order-1 col-span-2 col-start-2 mx-auto h-50 w-50 max-w-xs justify-self-center rounded-3xl object-cover"
           />
         )
       }
       <div
         id="info"
-        class="order-2 col-span-4 flex h-full flex-col place-content-between items-center gap-2.5 md:order-1 md:col-span-4 md:items-start"
+        class="order-2 col-span-4 flex h-full flex-col place-content-between items-center gap-2.5"
       >
         {
           basicInfo.name && (
@@ -39,7 +39,7 @@ const basicInfo = { ...data };
           {
             basicInfo.location && basicInfo.location.url && (
               <a
-                class="flex justify-center md:justify-start"
+                class="flex justify-center"
                 aria-label="Location"
                 href={basicInfo.location.url}
               >
@@ -84,26 +84,72 @@ const basicInfo = { ...data };
         </div>
 
         <ul
-          class="flex justify-center gap-0.5 md:justify-start"
+          class="flex flex-wrap justify-center gap-0.5 md:justify-start"
           role="list"
           aria-label="Contact information"
         >
           {
             basicInfo.contact &&
-              Object.keys(basicInfo.contact).map((categorie) => {
+              Object.keys(basicInfo.contact).map((categorie, index) => {
                 const { data, icon } = basicInfo.contact[categorie];
                 return data ? (
-                  <li class="flex">
+                  <>
+                    <li class="noprint flex">
+                      <a
+                        href={categorie === "email" ? `mailto:${data}` : data}
+                        class="flex items-center"
+                      >
+                        {icon && (
+                          <img
+                            src={icon}
+                            alt={categorie}
+                            title={data}
+                            class="icon mr-1.5"
+                            width={28}
+                            height={28}
+                            style="width:28px; height:28px;"
+                          />
+                        )}
+                      </a>
+                    </li>
+                    <div class="print hidden text-nowrap">
+                      <span class="mx-3.5 inline-flex">
+                        {icon && (
+                          <img
+                            src={icon}
+                            alt={categorie}
+                            title={data}
+                            class="icon mr-1.5"
+                            width={20}
+                            height={20}
+                            style="width:20px; height:20px; border: none;"
+                          />
+                        )}
+                        <span class="underline">{data}</span>
+                      </span>
+                    </div>
+                  </>
+                ) : null;
+              })
+          }
+          {
+            basicInfo.profiles &&
+              basicInfo.profiles.map((profile) => (
+                <>
+                  <li class="noprint flex items-center">
                     <a
-                      href={categorie === "email" ? `mailto:${data}` : data}
+                      href={profile.url}
+                      target="_blank"
+                      rel="noopener"
                       class="flex items-center"
+                      aria-label={`${basicInfo.name} on ${profile.network}`}
                     >
-                      {icon && (
+                      {profile.icon && (
                         <img
-                          src={icon}
-                          alt={categorie}
-                          title={data}
-                          class="icon mr-1.5"
+                          src={profile.icon}
+                          alt={profile.network}
+                          title={profile.network}
+                          class="icon profileIcon mr-1.5"
                           width={28}
                           height={28}
                           style="width:28px; height:28px;"
@@ -111,33 +157,29 @@ const basicInfo = { ...data };
                       )}
                     </a>
                   </li>
-                ) : null;
-              })
-          }
-          {
-            basicInfo.profiles &&
-              basicInfo.profiles.map((profile) => (
-                <li class="flex items-center">
-                  <a
-                    href={profile.url}
-                    target="_blank"
-                    rel="noopener"
-                    class="flex items-center"
-                    aria-label={`${basicInfo.name} on ${profile.network}`}
-                  >
-                    {profile.icon && (
-                      <img
-                        src={profile.icon}
-                        alt={profile.network}
-                        title={profile.network}
-                        class="icon mr-1.5"
-                        width={28}
-                        height={28}
-                        style="width:28px; height:28px;"
-                      />
-                    )}
-                  </a>
-                </li>
+                  <div class="print hidden text-nowrap">
+                    <span class="mx-3.5 inline-flex">
+                      {profile.icon && (
+                        <img
+                          src={profile.icon}
+                          alt={profile.network}
+                          title={profile.network}
+                          class="icon profileIcon mr-0.5"
+                          width={20}
+                          height={20}
+                          style="width:20px; height:20px; border: none;"
+                        />
+                      )}
+                      <a
+                        href={profile.url}
+                        class="underline"
+                        style="text-transform: lowercase;"
+                      >
+                        {profile.url.replace(/https?:\/\/(www\.)?/, "")}
+                      </a>
+                    </span>
+                  </div>
+                </>
               ))
           }
         </ul>
@@ -145,3 +187,16 @@ const basicInfo = { ...data };
     </div>
   </div>
 </section>
+
+<style>
+  @media print {
+    .print-container {
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+    .print-container span {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+</style>

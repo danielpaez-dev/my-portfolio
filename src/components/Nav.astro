@@ -8,7 +8,6 @@ import briefcase from "@icon/briefcase.svg";
 import academic from "@icon/academic.svg";
 import skills from "@icon/skills.svg";
 import contact from "@icon/contact.svg";
-import ThemeToggle from "@components/ThemeToggle.astro";
 import KeyboardManager from "@components/KeyboardManager.astro";
 
 const icons = {
@@ -48,7 +47,6 @@ const activeKeys = Object.keys(data).filter(
     <div class="h-8 w-2.5 self-center bg-gray-300 dark:bg-gray-700"></div>
 
     <div class="group flex h-full w-full items-center justify-center">
-      <ThemeToggle />
       <KeyboardManager data={data} />
     </div>
   </div>

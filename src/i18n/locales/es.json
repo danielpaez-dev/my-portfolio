@@ -299,6 +299,13 @@
   "footer": {
     "title": "Contáctame"
   },
+  "command": {
+    "command": "Escribe un comando...",
+    "icon": "./icons/print.svg",
+    "actions": "acciones",
+    "social": "redes sociales",
+    "action": "Imprimir"
+  },
   "active": {
     "Hero": true,
     "About": true,
