@@ -67,7 +67,7 @@ import Send from "@icon/send.svg";
       }
     </ul>
     <div class="flex justify-center gap-x-1.5 text-2xl">
-      <span>Construido con </span>
+      <span>{footer.buildBy1}</span>
       <img
         src="/icons/astro.svg"
         alt="Astro"
@@ -75,7 +75,7 @@ import Send from "@icon/send.svg";
         width={16}
         height={16}
       />
-      <span> por </span>
+      <span>{footer.buildBy2}</span>
       <a
         href={basicInfo.profiles.find((profile) => profile.network === "GitHub")
           .url}
@@ -85,7 +85,7 @@ import Send from "@icon/send.svg";
         target="_blank"
         rel="noopener noreferrer"
       >
-        Daniel Páez
+        <span>{footer.buildBy3}</span>
       </a>
     </div>
   </div>

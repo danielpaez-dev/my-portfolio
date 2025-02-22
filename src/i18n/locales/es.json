@@ -317,7 +317,10 @@
     ]
   },
   "footer": {
-    "title": "Contáctame"
+    "title": "Contáctame",
+    "buildBy1": "Construido con ",
+    "buildBy2": "por ",
+    "buildBy3": "Daniel Páez"
   },
   "command": {
     "command": "Escribe un comando...",

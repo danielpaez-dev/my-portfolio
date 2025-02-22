@@ -286,7 +286,10 @@
     ]
   },
   "footer": {
-    "title": "Contact Me"
+    "title": "Contact Me",
+    "buildBy1": "Build with ",
+    "buildBy2": "by ",
+    "buildBy3": "Daniel Páez"
   },
   "command": {
     "command": "command",
