@@ -56,17 +56,6 @@
     "title": "Experiencia",
     "list": [
       {
-        "icon": ":briefcase:",
-        "name": "Capgemini",
-        "position": "Frontend Developer",
-        "url": "https://www.capgemini.com/es-es/",
-        "startDate": "Enero 2021",
-        "endDate": "Presente",
-        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
-        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
-      },
-      {
-        "icon": ":briefcase:",
         "name": "Capgemini",
         "position": "Frontend Developer",
         "url": "https://www.capgemini.com/es-es/",
@@ -99,22 +88,24 @@
       "highlights": [""]
     }
   ],
-  "education": [
-    {
-      "icon": ":mortar_board:",
-      "institution": "",
-      "url": "",
-      "area": "",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "",
-      "score": "",
-      "courses": [""]
-    }
-  ],
+  "education": {
+    "title": "Educación",
+    "list": [
+      {
+        "institution": "Harvard University",
+        "url": "https://www.harvard.edu",
+        "area": "Ciencias de la computación",
+        "studyType": "Licenciatura",
+        "summary": "Estudié en Harvard University la carrera de Computer Science con especialización en Web Development. Aprendí los fundamentos de la programación, estructuras de datos y algoritmos, diseño de bases de datos y desarrollo web.",
+        "startDate": "2012",
+        "endDate": "2016",
+        "score": "4.5/5",
+        "courses": [""]
+      }
+    ]
+  },
   "awards": [
     {
-      "icon": ":trophy:",
       "title": "",
       "date": "",
       "awarder": "",
@@ -122,7 +113,6 @@
     }
   ],
   "certificates": {
-    "icon": ":scroll:",
     "title": "Certificados",
     "list": [
       {
@@ -149,7 +139,6 @@
   },
   "publications": [
     {
-      "icon": ":newspaper:",
       "name": "",
       "publisher": "",
       "releaseDate": "",
@@ -159,7 +148,6 @@
   ],
   "skills": {
     "title": "Destrezas",
-    "icon": "hammer_and_wrench",
     "list": [
       {
         "name": "HTML",
@@ -278,7 +266,6 @@
   ],
   "projects": {
     "title": "Proyectos",
-    "icon": ":bust_in_silhouette:",
     "list": [
       {
         "name": "Portafolio",
@@ -334,6 +321,7 @@
     "About": true,
     "Experience": true,
     "Projects": true,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,

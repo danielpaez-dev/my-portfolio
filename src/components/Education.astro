@@ -1,0 +1,43 @@
+---
+const { data } = Astro.props;
+const education = data;
+---
+
+<section
+  id={education.title}
+  aria-labelledby="´${education.title}-heading´"
+  itemscope
+  itemtype="https://schema.org/CollectionPage"
+>
+  <h2 id="experience-heading">{education.title}</h2>
+  <hr />
+  <div class="container flex flex-col gap-6" role="list">
+    {
+      education &&
+        education.list &&
+        education.list.map((item) => (
+          <div role="listitem" itemscope class="flex flex-col">
+            <div class="flex justify-between">
+              <h3>{item.institution}</h3>
+              <div>
+                {item.startDate} - {item.endDate}
+              </div>
+            </div>
+            <h4>
+              <div class="flex justify-between">
+                <span>
+                  <em>
+                    {item.area} ({item.studyType})
+                  </em>
+                </span>
+                <span class="font-extrabold">{item.score}</span>
+              </div>
+            </h4>
+            <ul class="bull">
+              <li>{item.summary}</li>
+            </ul>
+          </div>
+        ))
+    }
+  </div>
+</section>

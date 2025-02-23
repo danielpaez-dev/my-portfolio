@@ -56,14 +56,13 @@
     "title": "Experience",
     "list": [
       {
-        "icon": ":briefcase:",
-        "name": "",
-        "position": "",
-        "url": "",
-        "startDate": "",
-        "endDate": "",
-        "summary": "",
-        "highlights": [""]
+        "name": "Capgemini",
+        "position": "Frontend Developer",
+        "url": "https://www.capgemini.com/es-es/",
+        "startDate": "Enero 2021",
+        "endDate": "Presente",
+        "summary": "Development of web applications for the company's clients. Teamwork with agile methodologies and good programming practices.",
+        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
       }
     ]
   },
@@ -79,19 +78,22 @@
       "highlights": [""]
     }
   ],
-  "education": [
-    {
-      "icon": ":mortar_board:",
-      "institution": "",
-      "url": "",
-      "area": "",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "",
-      "score": "",
-      "courses": [""]
-    }
-  ],
+  "education": {
+    "title": "Education",
+    "list": [
+      {
+        "institution": "Harvard University",
+        "url": "https://www.harvard.edu",
+        "area": "Computer Science",
+        "studyType": "Bachelor",
+        "summary": "I studied computer science at Harvard University, where I learned the basics of programming and computer science.",
+        "startDate": "2012",
+        "endDate": "2016",
+        "score": "4.5/5",
+        "courses": [""]
+      }
+    ]
+  },
   "awards": [
     {
       "icon": ":trophy:",
@@ -300,9 +302,10 @@
   },
   "active": {
     "Hero": true,
-    "About": false,
+    "About": true,
     "Experience": true,
     "Projects": true,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,
