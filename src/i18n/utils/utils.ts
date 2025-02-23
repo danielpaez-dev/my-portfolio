@@ -2,7 +2,7 @@ type Language = string;
 
 const locales = import.meta.glob("../locales/*.json", { eager: true });
 
-const availableLanguages: Language[] = Object.keys(locales)
+export const availableLanguages: Language[] = Object.keys(locales)
   .map((path) => {
     const match = path.match(/([\w-]+)\.json$/);
     return match ? match[1] : "";

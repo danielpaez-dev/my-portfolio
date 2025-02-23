@@ -1,0 +1,43 @@
+---
+import "../styles/global.css";
+import { translations } from "@/i18n/utils/utils";
+const translationsModule = translations as {
+  default: {
+    404: any;
+  };
+};
+const { 404: notFound = {} } = translationsModule.default;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página no encontrada</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body>
+    <section
+      class="bg-hero-pattern flex h-screen w-full items-center justify-center bg-cover bg-center dark:bg-gray-900"
+    >
+      <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+        <div class="mx-auto max-w-screen-sm text-center">
+          <h1 class="mb-4 text-7xl font-extrabold tracking-tight lg:text-9xl">
+            404
+          </h1>
+          <p
+            class="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl dark:text-white"
+          >
+            {notFound.description}
+          </p>
+          <a
+            href="/"
+            class="text-md text-capitalize my-4 inline-flex rounded-lg px-5 py-2.5 text-center font-medium text-white"
+            style="text-transform: capitalize;">{notFound.link}</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
