@@ -3,8 +3,8 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host",
-    "start": "astro dev",
+    "dev": "npm run generate-readmes && concurrently \"astro dev --host\" \"wait-on http://localhost:4321 && npm run generate-pdf\"",
+    "start": "npm run generate-readmes && concurrently \"astro dev\" \"wait-on http://localhost:4321 && npm run generate-pdf\"",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -41,12 +41,14 @@
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
     "globals": "^15.15.0",
     "path-to-regexp": "^6.2.2",
     "postcss": "^8.5.1",
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.0.5",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "wait-on": "^8.0.2"
   },
   "prettier": {
     "plugins": [

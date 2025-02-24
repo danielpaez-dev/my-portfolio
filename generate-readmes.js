@@ -20,16 +20,38 @@ ${documentation.description}
 ${links}
 
 ## ${documentation["title0-1"]}
+
 ${documentation["description0-1"]}
 ${documentation["description0-2"]}
 ${documentation["description0-3"]}
 
 ## ${documentation.title2}
+
 ${documentation["description2-1"]}
 
 ## ${documentation.title3}
 
+### ${documentation["description3-1"]}
+
+\`\`\`bash
+git clone https://github.com/danielpaez-dev/my-portfolio.git
+\`\`\`
+
+### ${documentation["description3-2"]}
+
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+${documentation["description3-3"]}
+
+${documentation["description3-4"]}
+
+${documentation["description3-5"]}
+
 ## ${documentation.title4}
+
 ${documentation["description4-1"]}
 `;
 };

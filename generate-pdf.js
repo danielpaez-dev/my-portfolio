@@ -1,19 +1,13 @@
 import puppeteer from "puppeteer";
-import { exec } from "child_process";
-import fs from "fs";
 
 const generatePDF = async () => {
-  const server = exec("npm run preview");
-
-  const browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
-
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
+  // Espera activamente a que el servidor esté listo
   await page.goto("http://localhost:4321", {
     waitUntil: "networkidle0",
-    timeout: 30000,
+    timeout: 60000, // Aumenta el timeout
   });
 
   await page.pdf({
@@ -24,7 +18,6 @@ const generatePDF = async () => {
   });
 
   await browser.close();
-  server.kill();
   console.log("✅ generated PDF in ./CV.pdf");
 };
 
