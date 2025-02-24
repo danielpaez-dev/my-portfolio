@@ -50,25 +50,24 @@
   "about": {
     "title": "About Me",
     "icon": ":bust_in_silhouette:",
-    "description": "Passionate frontend developer with with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
+    "description": "Passionate frontend developer with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
   },
   "experience": {
     "title": "Experience",
     "list": [
       {
-        "name": "Capgemini",
-        "position": "Frontend Developer",
-        "url": "https://www.capgemini.com/es-es/",
-        "startDate": "Enero 2021",
-        "endDate": "Presente",
-        "summary": "Development of web applications for the company's clients. Teamwork with agile methodologies and good programming practices.",
-        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": "",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["", "", "", "", ""]
       }
     ]
   },
   "volunteer": [
     {
-      "icon": ":handshake:",
       "organization": "",
       "position": "",
       "url": "",
@@ -82,21 +81,20 @@
     "title": "Education",
     "list": [
       {
-        "institution": "Harvard University",
-        "url": "https://www.harvard.edu",
-        "area": "Computer Science",
-        "studyType": "Bachelor",
-        "summary": "I studied computer science at Harvard University, where I learned the basics of programming and computer science.",
-        "startDate": "2012",
-        "endDate": "2016",
-        "score": "4.5/5",
+        "institution": "",
+        "url": "",
+        "area": "",
+        "studyType": "",
+        "summary": "",
+        "startDate": "",
+        "endDate": "",
+        "score": "",
         "courses": [""]
       }
     ]
   },
   "awards": [
     {
-      "icon": ":trophy:",
       "title": "",
       "date": "",
       "awarder": "",
@@ -114,7 +112,7 @@
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
-        "summary": "I completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
+        "summary": "Completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
         "skills": [
           "HTML",
           "CSS",
@@ -126,12 +124,33 @@
           "Figma"
         ],
         "image": ""
+      },
+      {
+        "name": "Meta Introduction to Databases for Back-End Development",
+        "date": "January 25, 2025",
+        "score": "9.5",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
+        "credential_id": "I1MMWJDX2YG4",
+        "summary": "Completed an introduction of databases for backend development with MySQL. The course includes normalization, common comands and queries.",
+        "skills": ["MySQL", "SQL"],
+        "image": ""
+      },
+      {
+        "name": "Meta Programming with Python",
+        "date": "January 21, 2025",
+        "score": "10",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
+        "credential_id": "H3ABAC0971BS",
+        "summary": "Learned to programming with Python with this course. It includes python programming concepts, data structures, algorithms and object-oriented programming.",
+        "skills": ["Python", "HTML", "CSS"],
+        "image": ""
       }
     ]
   },
   "publications": [
     {
-      "icon": ":newspaper:",
       "name": "",
       "publisher": "",
       "releaseDate": "",
@@ -141,96 +160,95 @@
   ],
   "skills": {
     "title": "Skills",
-    "icon": "hammer_and_wrench",
     "list": [
       {
-        "name": "HTML",
-        "keywords": ["Web development", "Frontend"],
-        "icon": "./icons/html.svg"
+        "name": "Astro",
+        "keywords": ["", ""],
+        "icon": "./icons/astro.svg"
       },
       {
-        "name": "CSS",
-        "keywords": ["Web development", "Frontend", "Diseño Responsive"],
-        "icon": "./icons/css.svg"
+        "name": "React",
+        "keywords": ["", "", ""],
+        "icon": "./icons/react.svg"
       },
       {
-        "name": "SCSS",
-        "keywords": ["Web development", "Frontend", "UI"],
-        "icon": "./icons/sass.svg"
+        "name": "TypeScript",
+        "keywords": ["", "", ""],
+        "icon": "./icons/typescript.svg"
       },
       {
         "name": "JavaScript",
-        "keywords": ["Web development", "Frontend", "Backend", "Fullstack"],
+        "keywords": ["", "", "", ""],
         "icon": "./icons/javascript.svg"
       },
       {
         "name": "Tailwind",
-        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "keywords": ["", "", ""],
         "icon": "./icons/tailwind.svg"
       },
       {
         "name": "Bootstrap",
-        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "keywords": ["", "", ""],
         "icon": "./icons/bootstrap.svg"
       },
       {
-        "name": "TypeScript",
-        "keywords": ["Web development", "Frontend", "Backend"],
-        "icon": "./icons/typescript.svg"
+        "name": "SCSS",
+        "keywords": ["", "", ""],
+        "icon": "./icons/sass.svg"
       },
       {
-        "name": "SQL",
-        "keywords": ["Bases de Datos", "SQL", "Database"],
-        "icon": "./icons/sql.svg"
+        "name": "Django",
+        "keywords": ["", "", ""],
+        "icon": "./icons/django.svg"
       },
       {
         "name": "MySQL",
-        "keywords": ["Bases de Datos", "SQL", "Database"],
+        "keywords": ["", "", ""],
         "icon": "./icons/mysql.svg"
       },
       {
         "name": "Python",
-        "keywords": ["Backend", "Scripting", "Data Science"],
+        "keywords": ["", "", ""],
         "icon": "./icons/python.svg"
       },
       {
-        "name": "Django",
-        "keywords": ["Web development", "Backend", "Python"],
-        "icon": "./icons/django.svg"
+        "name": "SQL",
+        "keywords": ["", "", ""],
+        "icon": "./icons/sql.svg"
+      },
+      {
+        "name": "HTML",
+        "keywords": ["", ""],
+        "icon": "./icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "keywords": ["", "", ""],
+        "icon": "./icons/css.svg"
       },
       {
         "name": "Git",
-        "keywords": ["Version control", "Colaboración"],
+        "keywords": ["", ""],
         "icon": "./icons/git.svg"
       },
       {
         "name": "GitHub",
-        "keywords": ["Version control", "Collaboration"],
+        "keywords": ["", ""],
         "icon": "./icons/github.svg"
       },
       {
-        "name": "React",
-        "keywords": ["Web development", "Frontend", "JavaScript Library"],
-        "icon": "./icons/react.svg"
-      },
-      {
-        "name": "Astro",
-        "keywords": ["Web development", "Frontend"],
-        "icon": "./icons/astro.svg"
-      },
-      {
         "name": "Figma",
-        "keywords": ["UI/UX Design", "Prototyping"],
+        "keywords": ["", ""],
         "icon": "./icons/figma.svg"
       },
       {
         "name": "Vercel",
-        "keywords": ["Deployment", "Web Hosting"],
+        "keywords": ["", ""],
         "icon": "./icons/vercel.svg"
       },
       {
         "name": "Markdown",
-        "keywords": ["Documentation", "Content Writing"],
+        "keywords": ["", ""],
         "icon": "./icons/markdown.svg"
       }
     ]
@@ -247,6 +265,16 @@
         "language": "English",
         "fluency": "advanced",
         "icon": "./icons/uk.svg"
+      },
+      {
+        "language": "French",
+        "fluency": "basic",
+        "icon": "./icons/france.svg"
+      },
+      {
+        "language": "German",
+        "fluency": "basic",
+        "icon": "./icons/germany.svg"
       }
     ]
   },
@@ -269,7 +297,7 @@
     "list": [
       {
         "name": "Portfolio",
-        "description": "A minimalist portfolio template with an automated CV.pdf export, documentation and translation",
+        "description": "A minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file.",
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
@@ -303,9 +331,9 @@
   "active": {
     "Hero": true,
     "About": true,
-    "Experience": true,
+    "Experience": false,
     "Projects": true,
-    "Education": true,
+    "Education": false,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,

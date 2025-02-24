@@ -56,29 +56,18 @@
     "title": "Experiencia",
     "list": [
       {
-        "name": "Capgemini",
-        "position": "Frontend Developer",
-        "url": "https://www.capgemini.com/es-es/",
-        "startDate": "Enero 2021",
-        "endDate": "Presente",
-        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
-        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
-      },
-      {
-        "icon": ":briefcase:",
-        "name": "Capgemini",
-        "position": "Frontend Developer",
-        "url": "https://www.capgemini.com/es-es/",
-        "startDate": "Enero 2021",
-        "endDate": "Presente",
-        "summary": "Desarrollo de aplicaciones web para clientes de la empresa. Trabajo en equipo con metodologías ágiles y buenas prácticas de programación.",
-        "highlights": ["React", "TypeScript", "HTML", "CSS", "Git"]
+        "name": "",
+        "position": "",
+        "url": "",
+        "startDate": "",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["", ""]
       }
     ]
   },
   "volunteer": [
     {
-      "icon": ":handshake:",
       "organization": "",
       "position": "",
       "url": "",
@@ -92,14 +81,14 @@
     "title": "Educación",
     "list": [
       {
-        "institution": "Harvard University",
-        "url": "https://www.harvard.edu",
-        "area": "Ciencias de la computación",
-        "studyType": "Licenciatura",
-        "summary": "Estudié en Harvard University la carrera de Computer Science con especialización en Web Development. Aprendí los fundamentos de la programación, estructuras de datos y algoritmos, diseño de bases de datos y desarrollo web.",
-        "startDate": "2012",
-        "endDate": "2016",
-        "score": "4.5/5",
+        "institution": "",
+        "url": "",
+        "area": "",
+        "studyType": "",
+        "summary": "",
+        "startDate": "",
+        "endDate": "",
+        "score": "",
         "courses": [""]
       }
     ]
@@ -134,6 +123,28 @@
           "Figma"
         ],
         "image": "/public/images/meta.webp"
+      },
+      {
+        "name": "Introducción a las bases de datos para el desarrollo back-end de Meta",
+        "date": "Enero 25, 2024",
+        "score": "9.5",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
+        "credential_id": "I1MMWJDX2YG4",
+        "summary": "Completé una introducción de bases de datos para el desarrollo backend con MySQL. El curso incluye normalización, comandos y consultas comunes.",
+        "skills": ["MySQL", "SQL"],
+        "image": ""
+      },
+      {
+        "name": "Meta Programación con Python",
+        "date": "January 21, 2025",
+        "score": "10",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
+        "credential_id": "H3ABAC0971BS",
+        "summary": "Aprendí a programar en Python desde cero con este curso. Este incluye estructuras de datos, algoritmos y programación orientada a objetos.",
+        "skills": ["Python", "HTML", "CSS"],
+        "image": ""
       }
     ]
   },
@@ -150,88 +161,93 @@
     "title": "Destrezas",
     "list": [
       {
-        "name": "HTML",
-        "keywords": ["Web development", "Frontend"],
-        "icon": "./icons/html.svg"
+        "name": "Astro",
+        "keywords": ["", ""],
+        "icon": "./icons/astro.svg"
       },
       {
-        "name": "CSS",
-        "keywords": ["Web development", "Frontend", "Diseño Responsive"],
-        "icon": "./icons/css.svg"
+        "name": "React",
+        "keywords": ["", "", ""],
+        "icon": "./icons/react.svg"
       },
       {
-        "name": "SCSS",
-        "keywords": ["Web development", "Frontend", "UI"],
-        "icon": "./icons/sass.svg"
+        "name": "TypeScript",
+        "keywords": ["", "", ""],
+        "icon": "./icons/typescript.svg"
       },
       {
         "name": "JavaScript",
-        "keywords": ["Web development", "Frontend", "Backend", "Fullstack"],
+        "keywords": ["", "", "", ""],
         "icon": "./icons/javascript.svg"
       },
       {
         "name": "Tailwind",
-        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "keywords": ["", "", ""],
         "icon": "./icons/tailwind.svg"
       },
       {
         "name": "Bootstrap",
-        "keywords": ["Web development", "Frontend", "CSS Framework"],
+        "keywords": ["", "", ""],
         "icon": "./icons/bootstrap.svg"
       },
       {
-        "name": "TypeScript",
-        "keywords": ["Web development", "Frontend", "Backend"],
-        "icon": "./icons/typescript.svg"
+        "name": "SCSS",
+        "keywords": ["", "", ""],
+        "icon": "./icons/sass.svg"
+      },
+      {
+        "name": "Django",
+        "keywords": ["", "", ""],
+        "icon": "./icons/django.svg"
       },
       {
         "name": "MySQL",
-        "keywords": ["Bases de Datos", "SQL", "Database"],
+        "keywords": ["", "", ""],
         "icon": "./icons/mysql.svg"
       },
       {
         "name": "Python",
-        "keywords": ["Backend", "Scripting", "Data Science"],
+        "keywords": ["", "", ""],
         "icon": "./icons/python.svg"
       },
       {
-        "name": "Django",
-        "keywords": ["Web development", "Backend", "Python"],
-        "icon": "./icons/django.svg"
+        "name": "SQL",
+        "keywords": ["", "", ""],
+        "icon": "./icons/sql.svg"
+      },
+      {
+        "name": "HTML",
+        "keywords": ["", ""],
+        "icon": "./icons/html.svg"
+      },
+      {
+        "name": "CSS",
+        "keywords": ["", "", ""],
+        "icon": "./icons/css.svg"
       },
       {
         "name": "Git",
-        "keywords": ["Version control", "Colaboración"],
+        "keywords": ["", ""],
         "icon": "./icons/git.svg"
       },
       {
         "name": "GitHub",
-        "keywords": ["Version control", "Collaboration"],
+        "keywords": ["", ""],
         "icon": "./icons/github.svg"
       },
       {
-        "name": "React",
-        "keywords": ["Web development", "Frontend", "JavaScript Library"],
-        "icon": "./icons/react.svg"
-      },
-      {
-        "name": "Astro",
-        "keywords": ["Web development", "Frontend"],
-        "icon": "./icons/astro.svg"
-      },
-      {
         "name": "Figma",
-        "keywords": ["UI/UX Design", "Prototyping"],
+        "keywords": ["", ""],
         "icon": "./icons/figma.svg"
       },
       {
         "name": "Vercel",
-        "keywords": ["Deployment", "Web Hosting"],
+        "keywords": ["", ""],
         "icon": "./icons/vercel.svg"
       },
       {
         "name": "Markdown",
-        "keywords": ["Documentation", "Content Writing"],
+        "keywords": ["", ""],
         "icon": "./icons/markdown.svg"
       }
     ]
@@ -248,6 +264,16 @@
         "language": "Inglés",
         "fluency": "avanzado",
         "icon": "./icons/uk.svg"
+      },
+      {
+        "language": "Francés",
+        "fluency": "basico",
+        "icon": "./icons/france.svg"
+      },
+      {
+        "language": "Alemán",
+        "fluency": "basico",
+        "icon": "./icons/germany.svg"
       }
     ]
   },
@@ -319,9 +345,9 @@
   "active": {
     "Hero": true,
     "About": true,
-    "Experience": true,
+    "Experience": false,
     "Projects": true,
-    "Education": true,
+    "Education": false,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,
