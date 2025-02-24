@@ -7,7 +7,9 @@ Una plantilla de CV minimalista con exportación automatizada de CV.pdf, documen
 ## 📬 Contáctame
 
 No dude en ponerse en contacto conmigo para cualquier pregunta o sugerencia
+
 📧 Email: [danielpaez.dev@proton.me](mailto:danielpaez.dev@proton.me)
+
 📥 CV: [Download CV.pdf](CV.pdf)
 
 ## 🛠️ Stack

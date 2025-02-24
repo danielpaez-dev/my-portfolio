@@ -7,7 +7,9 @@ A minimalist portfolio template with an automated CV.pdf export, documentation a
 ## 📬 Contact Me
 
 Feel free to contact me for any questions or suggestions
+
 📧 Email: [danielpaez.dev@proton.me](mailto:danielpaez.dev@proton.me)
+
 📥 CV: [Download CV.pdf](CV.pdf)
 
 ## 🛠️ Stack
