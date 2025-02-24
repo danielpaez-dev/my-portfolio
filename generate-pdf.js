@@ -17,7 +17,7 @@ const generatePDF = async () => {
   });
 
   await page.pdf({
-    path: "public/CV.pdf",
+    path: "./CV.pdf",
     format: "A4",
     printBackground: true,
     margin: { top: "10mm", right: "10mm", bottom: "10mm", left: "10mm" },
@@ -25,7 +25,7 @@ const generatePDF = async () => {
 
   await browser.close();
   server.kill();
-  console.log("✅ generated PDF in public/CV.pdf");
+  console.log("✅ generated PDF in ./CV.pdf");
 };
 
 generatePDF().catch(console.error);
