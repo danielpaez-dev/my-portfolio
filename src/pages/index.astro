@@ -28,6 +28,7 @@ const translationsModule = translations as {
     projects: any;
     footer: any;
     active: Record<string, boolean>;
+    print: Record<string, boolean>;
   };
 };
 const {
@@ -46,29 +47,53 @@ const {
   projects = {},
   footer = {},
   active = {},
+  print = {},
 } = translationsModule.default;
+
+const heroPrintData = {
+  "image-hero": print["image-hero"],
+  "description-hero": print["description-hero"],
+};
 ---
 
 <Layout>
   <div
-    class="containerPage container mx-auto flex flex-col items-center justify-center gap-y-7 p-6 md:p-20 xl:px-75"
+    class="containerPage container mx-auto flex flex-col items-center justify-center gap-y-3 p-6 md:p-20 xl:px-75"
   >
-    {active.Hero && <Hero data={basics} data-section />}
-    {active.About && <About data={about} data-section />}
-    {
-      active.Experience && (
-        <Experience data={[experience, skills]} data-section />
-      )
-    }
-    {active.Projects && <Projects data={[projects, skills]} data-section />}
-    {active.Education && <Education data={education} data-section />}
-    {
-      active.CoursesAndCertifications && (
-        <CoursesAndCertifications data={certificates} data-section />
-      )
-    }
-    {active.Skills && <Skills data={[skills, languages]} data-section />}
-    {active.Footer && <Footer data={[basics, footer]} data-section />}
-    {active.Nav && <Nav data={active} />}
+    <div class={print.Hero ? "" : "noprint"}>
+      {active.Hero && <Hero data={[basics, heroPrintData]} data-section />}
+    </div>
+    <div class={print.About ? "" : "noprint"}>
+      {active.About && <About data={about} data-section />}
+    </div>
+    <div class={print.Experience ? "" : "noprint"}>
+      {
+        active.Experience && (
+          <Experience data={[experience, skills]} data-section />
+        )
+      }
+    </div>
+    <div class={print.Projects ? "" : "noprint"}>
+      {active.Projects && <Projects data={[projects, skills]} data-section />}
+    </div>
+    <div class={print.Education ? "" : "noprint"}>
+      {active.Education && <Education data={education} data-section />}
+    </div>
+    <div class={print.CoursesAndCertifications ? "" : "noprint"}>
+      {
+        active.CoursesAndCertifications && (
+          <CoursesAndCertifications data={certificates} data-section />
+        )
+      }
+    </div>
+    <div class={print.Skills ? "" : "noprint"}>
+      {active.Skills && <Skills data={[skills, languages]} data-section />}
+    </div>
+    <div class={print.Footer ? "" : "noprint"}>
+      {active.Footer && <Footer data={[basics, footer]} data-section />}
+    </div>
+    <div class={print.Nav ? "" : "noprint"}>
+      {active.Nav && <Nav data={active} />}
+    </div>
   </div>
 </Layout>

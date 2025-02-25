@@ -361,5 +361,18 @@
     "description3-5": "If you want to have your own website, deploy your project in Vercel",
     "title4": "📄 License",
     "description4-1": "[MIT](License) License - Created by [Daniel Páez](https://github.com/danielpaez-dev/danielpaez-dev.git)"
+  },
+  "print": {
+    "Hero": true,
+    "image-hero": false,
+    "description-hero": false,
+    "About": true,
+    "Experience": false,
+    "Projects": true,
+    "Education": false,
+    "CoursesAndCertifications": true,
+    "Skills": true,
+    "Footer": true,
+    "Nav": true
   }
 }

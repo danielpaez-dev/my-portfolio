@@ -2,7 +2,9 @@
 import { Image } from "astro:assets";
 import Me from "../assets/images/me.webp";
 const { data } = Astro.props;
-const basicInfo = { ...data };
+const basicInfo = data[0];
+const heroPrintData = data[1];
+console.log(heroPrintData);
 ---
 
 <section id="Hero">
@@ -15,7 +17,7 @@ const basicInfo = { ...data };
           <Image
             src={Me}
             alt={basicInfo.name}
-            class="noprint order-1 col-span-2 col-start-2 mx-auto h-50 w-50 max-w-xs justify-self-center rounded-3xl object-cover"
+            class={`order-1 col-span-2 col-start-2 mx-auto h-50 w-50 max-w-xs justify-self-center rounded-3xl object-cover ${heroPrintData["image-hero"] ? "" : "noprint"}`}
           />
         )
       }
@@ -33,7 +35,12 @@ const basicInfo = { ...data };
         <div>
           {
             basicInfo.summary && (
-              <p itemprop="description">{basicInfo.summary}</p>
+              <p
+                itemprop="description"
+                class={`${heroPrintData["description-hero"]} ? '' : 'noprint'`}
+              >
+                {basicInfo.summary}
+              </p>
             )
           }
           {
@@ -94,7 +101,7 @@ const basicInfo = { ...data };
                 const { data, icon } = basicInfo.contact[categorie];
                 return data ? (
                   <>
-                    <li class="noprint flex">
+                    <li class="flex">
                       <a
                         href={categorie === "email" ? `mailto:${data}` : data}
                         class="flex items-center"
@@ -104,7 +111,7 @@ const basicInfo = { ...data };
                             src={icon}
                             alt={categorie}
                             title={data}
-                            class="icon mr-1.5"
+                            class="icon noprint mr-1.5"
                             width={28}
                             height={28}
                             style="width:28px; height:28px;"
@@ -136,7 +143,7 @@ const basicInfo = { ...data };
             basicInfo.profiles &&
               basicInfo.profiles.map((profile) => (
                 <>
-                  <li class="noprint flex items-center">
+                  <li class="flex items-center">
                     <a
                       href={profile.url}
                       target="_blank"
@@ -149,7 +156,7 @@ const basicInfo = { ...data };
                           src={profile.icon}
                           alt={profile.network}
                           title={profile.network}
-                          class="icon profileIcon mr-1.5"
+                          class="icon profileIcon noprint mr-1.5"
                           width={28}
                           height={28}
                           style="width:28px; height:28px;"

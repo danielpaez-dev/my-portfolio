@@ -268,12 +268,12 @@
       },
       {
         "language": "Francés",
-        "fluency": "basico",
+        "fluency": "básico",
         "icon": "./icons/france.svg"
       },
       {
         "language": "Alemán",
-        "fluency": "basico",
+        "fluency": "básico",
         "icon": "./icons/germany.svg"
       }
     ]
@@ -358,5 +358,18 @@
     "description3-5": "Si deseas tener página web propia, despliega tu proyecto en Vercel",
     "title4": "📄 Licencia",
     "description4-1": "[MIT](License) Licencia - Creado por [Daniel Páez](https://github.com/danielpaez-dev/danielpaez-dev.git)"
+  },
+  "print": {
+    "Hero": true,
+    "image-hero": false,
+    "description-hero": false,
+    "About": true,
+    "Experience": false,
+    "Projects": true,
+    "Education": false,
+    "CoursesAndCertifications": true,
+    "Skills": true,
+    "Footer": true,
+    "Nav": true
   }
 }

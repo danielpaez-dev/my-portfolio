@@ -77,6 +77,10 @@ hr {
   fill: black;
 }
 
+.containerPage > div {
+  @apply w-full;
+}
+
 section {
   @apply w-full;
 }
