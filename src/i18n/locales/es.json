@@ -134,6 +134,17 @@
         "summary": "Completé una introducción de bases de datos para el desarrollo backend con MySQL. El curso incluye normalización, comandos y consultas comunes.",
         "skills": ["MySQL", "SQL"],
         "image": ""
+      },
+      {
+        "name": "Meta Programando con Python",
+        "date": "Enero 21, 2025",
+        "score": "10",
+        "issuer": "Coursera",
+        "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
+        "credential_id": "H3ABAC0971BS",
+        "summary": "Aprendí a programar con Python con este curso. Incluye conceptos de programación en python, estructuras de datos, algoritmos y programación orientada a objetos.",
+        "skills": ["Python", "HTML", "CSS"],
+        "image": ""
       }
     ]
   },

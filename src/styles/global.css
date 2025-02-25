@@ -1,27 +1,26 @@
 @import "tailwindcss";
+
 html {
   font-family: monospace;
   letter-spacing: -0.025rem;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 h1,
 h2 {
   font-weight: 600;
-}
-h1,
-h2,
-h3,
-a {
-  text-transform: capitalize;
+  font-size: xx-large;
 }
 
 h1 {
+  text-transform: capitalize;
   font-family: Helvetica, sans-serif;
-  font-size: xx-large;
-}
-
-h2 {
-  font-size: xx-large;
 }
 
 h3 {
@@ -30,18 +29,23 @@ h3 {
   font-weight: bold;
 }
 
-h3,
-p,
-span,
-a {
-  color: rgba(3, 7, 18, 0.8);
-}
-
+h2::first-letter,
+h3::first-letter,
 p::first-letter,
 a::first-letter,
 li::first-letter,
 span::first-letter {
   text-transform: uppercase;
+}
+
+h3,
+p,
+span,
+a,
+h1,
+h2,
+img {
+  color: var(--text-color);
 }
 
 a {
@@ -75,4 +79,36 @@ hr {
 
 section {
   @apply w-full;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: rgba(17, 17, 17, 0.9);
+  --nav-bg: rgb(229, 229, 229);
+  --nav-border: rgba(0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #101426;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --nav-bg: rgba(0, 0, 0, 0.3);
+    --nav-border: rgba(0, 0, 0);
+  }
+}
+
+html.dark {
+  --bg-color: #171717;
+  --text-color: rgba(255, 255, 255, 0.9);
+  --nav-bg: rgba(0, 0, 0, 0.3);
+  --nav-border: rgba(0, 0, 0);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overscroll-behavior: none;
 }
