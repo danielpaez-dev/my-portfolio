@@ -296,7 +296,7 @@
     "list": [
       {
         "name": "Portafolio",
-        "description": "Creé una plantilla de portfolio minimalista con un CV.pdf automatizado, documentación y traducción",
+        "description": "Creé una plantilla de CV minimalista con exportación automatizada de CV.pdf, documentación y traducción mediante un único archivo .json",
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
