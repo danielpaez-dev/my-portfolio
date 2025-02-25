@@ -113,7 +113,7 @@ const basicInfo = { ...data };
                       </a>
                     </li>
                     <div class="print hidden text-nowrap">
-                      <span class="no-capitalize mx-3.5 inline-flex">
+                      <span class="mx-3.5 inline-flex">
                         {icon && (
                           <img
                             src={icon}
@@ -125,7 +125,7 @@ const basicInfo = { ...data };
                             style="width:20px; height:20px; border: none;"
                           />
                         )}
-                        <span class="underline">{data}</span>
+                        <span class="no-first-uppercase underline">{data}</span>
                       </span>
                     </div>
                   </>
@@ -172,8 +172,7 @@ const basicInfo = { ...data };
                       )}
                       <a
                         href={profile.url}
-                        class="underline"
-                        style="text-transform: lowercase;"
+                        class="no-first-uppercase underline"
                       >
                         {profile.url.replace(/https?:\/\/(www\.)?/, "")}
                       </a>

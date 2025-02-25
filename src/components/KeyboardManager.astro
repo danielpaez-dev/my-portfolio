@@ -156,7 +156,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
 </script>
 
 <style is:inline>
-  /* KeyboardManager */
   #hotkeypad [data-container] {
     transform: translate(-50%, -200%) !important;
   }
@@ -168,41 +167,5 @@ const profilesInfo = profiles.map(({ network, url }) => {
   div[data-section="social"],
   div[data-section="actions"] {
     text-align: left;
-  }
-
-  /* Print */
-  @media print {
-    nav,
-    #About,
-    #Footer {
-      display: none;
-    }
-
-    .containerPage,
-    section,
-    .container {
-      margin: 0px;
-      padding: 0px;
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .containgrid {
-      grid-template-columns: repeat(2, 1fr) !important;
-      display: grid !important;
-    }
-
-    .noprint {
-      display: none;
-    }
-    .print {
-      display: block;
-    }
-
-    .info {
-      grid-template-columns: 1fr !important;
-      text-align: center !important;
-    }
-    /* A4: 210 x 297 (mm) */
   }
 </style>

@@ -1,5 +1,5 @@
 ---
-const { name, icon } = Astro.props;
+const { name, icon, fluency } = Astro.props;
 ---
 
 <span
@@ -8,9 +8,11 @@ const { name, icon } = Astro.props;
   <img
     src={icon}
     alt={name}
-    class="mr-1.5 inline-block"
+    class="inline-block"
     width={16}
     height={16}
     style="width:16px; height:16px;"
-  /><span class="spanBadge">{name}</span>
+  />
+  <span>{name}</span>
+  {fluency && <span>({fluency})</span>}
 </span>

@@ -106,8 +106,8 @@
     "list": [
       {
         "name": "Desarrollador front-end de Meta",
-        "date": "Diciembre 30, 2024",
-        "score": "9.68",
+        "date": "30/12/2024",
+        "score": "Nota: 9.68/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
@@ -126,8 +126,8 @@
       },
       {
         "name": "Introducción a las bases de datos para el desarrollo back-end de Meta",
-        "date": "Enero 25, 2024",
-        "score": "9.5",
+        "date": "25/01/2024",
+        "score": "Nota: 9.5/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
         "credential_id": "I1MMWJDX2YG4",
@@ -137,8 +137,8 @@
       },
       {
         "name": "Meta Programando con Python",
-        "date": "Enero 21, 2025",
-        "score": "10",
+        "date": "21/01/2025",
+        "score": "Nota: 10/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
         "credential_id": "H3ABAC0971BS",
@@ -159,6 +159,7 @@
   ],
   "skills": {
     "title": "Destrezas",
+    "subtitle": "Habilidades técnicas",
     "list": [
       {
         "name": "Astro",

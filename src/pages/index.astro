@@ -67,7 +67,7 @@ const {
         <CoursesAndCertifications data={certificates} data-section />
       )
     }
-    {active.Skills && <Skills data={skills} data-section />}
+    {active.Skills && <Skills data={[skills, languages]} data-section />}
     {active.Footer && <Footer data={[basics, footer]} data-section />}
     {active.Nav && <Nav data={active} />}
   </div>

@@ -32,9 +32,9 @@ h3 {
 h2::first-letter,
 h3::first-letter,
 p::first-letter,
-a::first-letter,
+a:not(.no-first-uppercase)::first-letter,
 li::first-letter,
-span::first-letter {
+span:not(.no-first-uppercase)::first-letter {
   text-transform: uppercase;
 }
 
@@ -111,4 +111,39 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overscroll-behavior: none;
+}
+
+/* Print */
+@media print {
+  nav,
+  #About,
+  #Footer {
+    display: none;
+  }
+
+  .containerPage,
+  section,
+  .container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .containgrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    display: grid !important;
+  }
+
+  .noprint {
+    display: none;
+  }
+  .print {
+    display: block;
+  }
+
+  .info {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
 }

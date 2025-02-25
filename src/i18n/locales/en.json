@@ -107,8 +107,8 @@
     "list": [
       {
         "name": "Meta Front-End Developer",
-        "date": "December 30, 2024",
-        "score": "9.68",
+        "date": "30/12/2024",
+        "score": "Note: 9.68/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
@@ -127,8 +127,8 @@
       },
       {
         "name": "Meta Introduction to Databases for Back-End Development",
-        "date": "January 25, 2025",
-        "score": "9.5",
+        "date": "25/01/2024",
+        "score": "Note: 9.5/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
         "credential_id": "I1MMWJDX2YG4",
@@ -138,8 +138,8 @@
       },
       {
         "name": "Meta Programming with Python",
-        "date": "January 21, 2025",
-        "score": "10",
+        "date": "21/01/2025",
+        "score": "Note: 10/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
         "credential_id": "H3ABAC0971BS",
@@ -160,6 +160,7 @@
   ],
   "skills": {
     "title": "Skills",
+    "subtitle": "Hard Skills",
     "list": [
       {
         "name": "Astro",

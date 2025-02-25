@@ -1,26 +1,50 @@
 ---
 import SkillBadge from "./SkillBadge.astro";
 const { data } = Astro.props;
-const skills = data;
+const skills = data[0];
+const languages = data[1];
 ---
 
 <section aria-labelledby="skills-heading" id="Skills">
-  <h2>{data.title}</h2>
+  <h2>{skills.title}</h2>
   <hr />
-  <ul class="container flex flex-wrap gap-y-2" role="list">
+  <div class="container flex flex-col gap-y-2">
     {
-      skills &&
-        skills.list &&
-        skills.list.length > 0 &&
-        skills.list.map((skillData) => (
-          <li role="listitem">
-            <SkillBadge
-              name={skillData.name}
-              icon={skillData.icon}
-              aria-label={skillData.name}
-            />
-          </li>
-        ))
+      skills && skills.list && skills.list.length > 0 && (
+        <>
+          <h3>{skills.subtitle}</h3>
+          <ul class="container flex flex-wrap gap-y-2" role="list">
+            {skills.list.map((skillData) => (
+              <li role="listitem">
+                <SkillBadge
+                  name={skillData.name}
+                  icon={skillData.icon}
+                  aria-label={skillData.name}
+                />
+              </li>
+            ))}
+          </ul>
+        </>
+      )
     }
-  </ul>
+    {
+      languages && languages.list && languages.list.length > 0 && (
+        <>
+          <h3>{languages.title}</h3>
+          <ul class="container flex flex-wrap gap-y-2" role="list">
+            {languages.list.map((languageData) => (
+              <li role="listitem">
+                <SkillBadge
+                  name={languageData.language}
+                  icon={languageData.icon}
+                  fluency={languageData.fluency}
+                  aria-label={languageData.name}
+                />
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
 </section>
