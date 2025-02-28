@@ -50,7 +50,7 @@
   "about": {
     "title": "Sobre mi",
     "icon": ":bust_in_silhouette:",
-    "description": "Desarrollador frontend apasionado con experiencia en la creación de aplicaciones web eficientes y óptimas. Actualmente trabajando en una aplicación web minesweeper typescript."
+    "description": "Desarrollador frontend apasionado con experiencia en la creación de aplicaciones web eficientes y óptimas. Actualmente trabajando en una aplicación web de buscaminas hecha con JavaScript vanilla."
   },
   "experience": {
     "title": "Experiencia",
@@ -310,6 +310,15 @@
           "Figma",
           "Markdown"
         ]
+      },
+      {
+        "name": "Buscaminas",
+        "description": "Construyendo un clon del buscaminas de Google con JavaScript y mejorando la jugabilidad añadiendo un modo personalizado",
+        "highlights": [""],
+        "url": "",
+        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
+        "image": "",
+        "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
       }
     ]
   },

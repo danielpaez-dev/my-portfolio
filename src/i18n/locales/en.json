@@ -50,7 +50,7 @@
   "about": {
     "title": "About Me",
     "icon": ":bust_in_silhouette:",
-    "description": "Passionate frontend developer with experience creating efficient and optimal web applications. Currently working at a minesweeper typescript web application."
+    "description": "Passionate frontend developer with experience creating efficient and optimal web applications. Currently working at a minesweeper JavaScript vanilla web application."
   },
   "experience": {
     "title": "Experience",
@@ -313,6 +313,15 @@
           "Figma",
           "Markdown"
         ]
+      },
+      {
+        "name": "Minesweeper",
+        "description": "Building a Google minesweeper clone with JavaScript by improving the gameplay by adding a custom mode",
+        "highlights": [""],
+        "url": "",
+        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
+        "image": "",
+        "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
       }
     ]
   },
