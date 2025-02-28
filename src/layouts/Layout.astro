@@ -1,4 +1,6 @@
 ---
+import Analytics from "@vercel/analytics/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { lang, translations } from "../i18n/utils/utils.ts";
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
@@ -70,5 +72,7 @@ const { name, image, summary, url, shareTitle } = basics;
 
   <body>
     <slot />
+    <Analytics />
+    <SpeedInsights />+
   </body>
 </html>
