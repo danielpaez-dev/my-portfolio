@@ -1,5 +1,4 @@
 ---
-// filepath: /c:/Users/PC GAMING/Documents/estudios y trabajo/portfolio/src/components/KeyboardManager.astro
 import { Image } from "astro:assets";
 import HotKeyPad from "@icon/hotkeypad.svg";
 import "hotkeypad/index.css";
@@ -91,7 +90,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     {
       id: "print",
       title: command.action,
-      icon: `<img src="/public/icons/print.svg" alt="Print icon" style="margin-right: 8px" width="16" height="16" />`,
+      icon: `<img src="./icons/print.svg" alt="Print icon" style="margin-right: 8px" width="16" height="16" />`,
       hotkey: "ctrl+P",
       section: "Actions",
       handler: () => {

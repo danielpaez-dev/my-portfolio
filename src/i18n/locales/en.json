@@ -332,10 +332,10 @@
     "buildBy3": "Daniel Páez"
   },
   "command": {
-    "command": "command",
+    "command": "Write a command...",
     "icon": "./icons/print.svg",
-    "actions": "acciones",
-    "social": "redes sociales",
+    "actions": "Actions",
+    "social": "Social networks",
     "action": "Print"
   },
   "active": {

@@ -51,27 +51,35 @@ const skills = data[1];
                 )}
               </div>
               <div class="grow p-4">
-                <div class="flex min-h-24 flex-col justify-center text-pretty break-words">
+                <div class="flex min-h-24 flex-col justify-center gap-y-1.5 text-pretty break-words">
                   <div class="flex justify-between">
-                    {projectData.url?.trim() && projectData.name?.trim() && (
-                      <a
-                        href={projectData.url}
-                        target="_blank"
-                        class="flex gap-1.5 font-semibold text-gray-800 dark:text-neutral-300"
-                        aria-label={`Visit ${projectData.name} project website`}
-                        itemprop="url"
-                      >
-                        <h3 itemprop="name">{projectData.name}</h3>
-                        <Image
-                          src={LinkIcon}
-                          alt=""
-                          width={16}
-                          height={16}
-                          aria-hidden="true"
-                          style="width:16px; height:16px;"
-                        />
-                      </a>
-                    )}
+                    {projectData.name?.trim() &&
+                      (projectData.url?.trim() ? (
+                        <a
+                          href={projectData.url}
+                          target="_blank"
+                          class="flex gap-1.5 font-semibold text-gray-800 dark:text-neutral-300"
+                          aria-label={`Visit ${projectData.name} project website`}
+                          itemprop="url"
+                        >
+                          <h3 itemprop="name">{projectData.name}</h3>
+                          <Image
+                            src={LinkIcon}
+                            alt=""
+                            width={16}
+                            height={16}
+                            aria-hidden="true"
+                            style="width:16px; height:16px;"
+                          />
+                        </a>
+                      ) : (
+                        <h3
+                          itemprop="name"
+                          class="font-semibold text-gray-800 dark:text-neutral-300"
+                        >
+                          {projectData.name}
+                        </h3>
+                      ))}
                     {projectData.githubURL?.trim() && (
                       <a
                         href={projectData.githubURL}
@@ -92,16 +100,18 @@ const skills = data[1];
                       </a>
                     )}
                   </div>
-                  {projectData.description?.trim() && (
-                    <p
-                      class="mt-1 text-sm text-pretty text-gray-500 dark:text-neutral-500"
-                      itemprop="description"
-                    >
-                      {projectData.description}
-                    </p>
-                  )}
+                  <div>
+                    {projectData.description?.trim() && (
+                      <p
+                        class="text-sm text-pretty text-gray-500 dark:text-neutral-500"
+                        itemprop="description"
+                      >
+                        {projectData.description}
+                      </p>
+                    )}
+                  </div>
                   <div
-                    class="flex flex-row flex-wrap items-center"
+                    class="flex flex-row flex-wrap items-center gap-y-2"
                     role="list"
                     aria-label="Technologies used"
                   >
@@ -115,12 +125,12 @@ const skills = data[1];
                             projectData.keywords.includes(skillData.name),
                         )
                         .map((skillData) => (
-                          <SkillBadge
-                            name={skillData.name}
-                            icon={skillData.icon}
-                            key={skillData.name}
-                            role="listitem"
-                          />
+                          <div role="listitem">
+                            <SkillBadge
+                              name={skillData.name}
+                              icon={skillData.icon}
+                            />
+                          </div>
                         ))}
                   </div>
                 </div>

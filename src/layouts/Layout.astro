@@ -4,7 +4,7 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 import { lang, translations } from "../i18n/utils/utils.ts";
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
-const faviconUrl = "../../public/favicon.png";
+const faviconUrl = "/favicon.png";
 const translationsModule = translations as {
   default: {
     basics: any;
@@ -21,10 +21,10 @@ const { name, image, summary, url, shareTitle } = basics;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={summary} />
-    <link rel="icon" href={faviconUrl} type="image/svg+xml" />
+    <link rel="icon" href={faviconUrl} type="image/png" />
 
     <!-- Script para establecer el tema lo antes posible -->
-    <script is:inline>
+    <!--<script is:inline>
       (function () {
         const storedTheme = localStorage.getItem("theme");
         let theme;
@@ -41,7 +41,7 @@ const { name, image, summary, url, shareTitle } = basics;
           document.documentElement.classList.remove("dark");
         }
       })();
-    </script>
+    </script> -->
 
     <!-- Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(personData)} />
@@ -73,6 +73,6 @@ const { name, image, summary, url, shareTitle } = basics;
   <body>
     <slot />
     <Analytics />
-    <SpeedInsights />+
+    <SpeedInsights />
   </body>
 </html>
