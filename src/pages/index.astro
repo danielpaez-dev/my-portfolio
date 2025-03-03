@@ -10,31 +10,14 @@ import CoursesAndCertifications from "@components/CoursesAndCertifications.astro
 import Nav from "@components/Nav.astro";
 import Skills from "@components/Skills.astro";
 import Footer from "@components/Contact.astro";
-import { translations } from "@/i18n/utils/utils";
-const translationsModule = translations as {
-  default: {
-    basics: any;
-    about: any;
-    experience: any;
-    volunteer: any;
-    education: any;
-    awards: any;
-    certificates: any;
-    publications: any;
-    skills: any;
-    languages: any;
-    interests: any;
-    references: any;
-    projects: any;
-    footer: any;
-    active: Record<string, boolean>;
-    print: Record<string, boolean>;
-  };
-};
+
+import { getTranslations, getCurrentLang } from "@/i18n/utils/utils.ts";
+const lang = getCurrentLang(Astro.locals);
+const translations = getTranslations(lang);
 const {
   basics = {},
-  about: about = {},
-  experience: experience = {},
+  about = {},
+  experience = {},
   volunteer = {},
   education = {},
   awards = {},
@@ -48,8 +31,7 @@ const {
   footer = {},
   active = {},
   print = {},
-} = translationsModule.default;
-
+} = translations;
 const heroPrintData = {
   "image-hero": print["image-hero"],
   "description-hero": print["description-hero"],

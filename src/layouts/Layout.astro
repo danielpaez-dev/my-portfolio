@@ -1,16 +1,14 @@
 ---
 import Analytics from "@vercel/analytics/astro";
 import SpeedInsights from "@vercel/speed-insights/astro";
-import { lang, translations } from "../i18n/utils/utils.ts";
+import { getCurrentLang, getTranslations } from "../i18n/utils/utils.ts";
+const lang = getCurrentLang(Astro.locals); // en SSR, se pasará Astro.locals; en build time, usará "en" por defecto
+const translationsModule = getTranslations(lang);
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
 const faviconUrl = "/favicon.png";
-const translationsModule = translations as {
-  default: {
-    basics: any;
-  };
-};
-const { basics } = translationsModule.default;
+
+const { basics } = translationsModule;
 const { name, image, summary, url, shareTitle } = basics;
 ---
 

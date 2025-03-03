@@ -1,7 +1,10 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [
+    "astro-middleware.d.ts",
+    "env.d.ts",
     ".astro/types.d.ts",
+    "types/**/*",
     "**/*"
   ],
   "exclude": [

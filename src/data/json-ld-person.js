@@ -1,6 +1,6 @@
-import { lang } from "../i18n/utils/utils.ts";
-import { translations } from "@/i18n/utils/utils";
-const translationsModule = translations;
+import { getCurrentLang, getTranslations } from "../i18n/utils/utils.ts";
+const lang = getCurrentLang(); // en SSR esto retornará "en" (por defecto) o el valor adecuado
+const translationsModule = getTranslations(lang);
 const { basics, education, certificates, skills, languages, awards } =
   translationsModule.default;
 

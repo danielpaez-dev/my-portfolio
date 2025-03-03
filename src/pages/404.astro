@@ -1,12 +1,9 @@
 ---
 import "../styles/global.css";
-import { translations } from "@/i18n/utils/utils";
-const translationsModule = translations as {
-  default: {
-    404: any;
-  };
-};
-const { 404: notFound = {} } = translationsModule.default;
+import { getCurrentLang, getTranslations } from "@/i18n/utils/utils";
+const lang = getCurrentLang();
+const translationsModule = getTranslations(lang);
+const { "404": notFound = {} } = translationsModule;
 ---
 
 <!doctype html>

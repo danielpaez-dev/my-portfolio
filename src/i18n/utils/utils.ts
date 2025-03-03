@@ -1,21 +1,28 @@
+import type { Translations } from "./types";
+
 type Language = string;
 
-const locales = import.meta.glob("../locales/*.json", { eager: true });
+const translationsMap = import.meta.glob("../locales/*.json", {
+  eager: true,
+  import: "default",
+});
 
-export const availableLanguages: Language[] = Object.keys(locales)
-  .map((path) => {
-    const match = path.match(/([\w-]+)\.json$/);
-    return match ? match[1] : "";
-  })
-  .filter(Boolean);
+export const availableLanguages = Object.keys(translationsMap)
+  .map((path) => path.match(/\/([\w-]+)\.json$/)?.[1])
+  .filter(Boolean) as string[];
 
-export function getInitialLang(): Language {
-  const detectedLang = navigator.language.split("-")[0];
-  return availableLanguages.includes(detectedLang)
-    ? detectedLang
-    : availableLanguages[0];
+export function getCurrentLang(locals?: { lang?: string }): Language {
+  if (import.meta.env.SSR) {
+    // En el servidor, se espera que se pase Astro.locals
+    return locals?.lang || "en";
+  } else {
+    // En el cliente: leer de la cookie o de navigator
+    const cookieLang = document.cookie.match(/lang=([^;]+)/)?.[1];
+    return cookieLang || navigator.language.split("-")[0];
+  }
 }
 
-export let lang: Language = getInitialLang();
-export let translations;
-translations = locales[`../locales/${lang}.json`];
+export function getTranslations(lang: Language) {
+  const validLang = availableLanguages.includes(lang) ? lang : "en";
+  return translationsMap[`../locales/${validLang}.json`] as Translations;
+}
