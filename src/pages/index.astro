@@ -37,6 +37,7 @@ const {
   interests = {},
   references = {},
   projects = {},
+  command = {},
   footer = {},
   active = {},
   print = {},
@@ -85,7 +86,7 @@ const heroPrintData = {
       {active.Footer && <Footer data={[basics, footer]} data-section />}
     </div>
     <div class={print.Nav ? "" : "noprint"}>
-      {active.Nav && <Nav data={active} />}
+      {active.Nav && <Nav data={[active, basics, command]} />}
     </div>
   </div>
 </Layout>

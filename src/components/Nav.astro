@@ -1,5 +1,8 @@
 ---
 const { data } = Astro.props;
+const active = data[0];
+const basics = data[1];
+const command = data[2];
 
 import Button from "@components/Button.astro";
 import home from "@icon/home.svg";
@@ -24,8 +27,8 @@ const icons = {
   Footer: contact,
 };
 
-const activeKeys = Object.keys(data).filter(
-  (key) => data[key] && key !== "Nav",
+const activeKeys = Object.keys(active).filter(
+  (key) => active[key] && key !== "Nav",
 );
 ---
 
@@ -52,12 +55,12 @@ const activeKeys = Object.keys(data).filter(
     <div class="h-8 w-2.5 self-center bg-gray-300 dark:bg-gray-700"></div>
 
     <div class="group flex h-full w-full items-center justify-center">
-      <KeyboardManager data={data} />
+      <KeyboardManager data={[basics, command]} />
     </div>
   </div>
 </nav>
 
-<script client:load type="module">
+<script type="module">
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll("nav a");

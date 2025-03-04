@@ -2,16 +2,10 @@
 import { Image } from "astro:assets";
 import HotKeyPad from "@icon/hotkeypad.svg";
 import "hotkeypad/index.css";
-import { translations } from "@/i18n/utils/utils";
-import ThemeToggle from "@components/ThemeToggle.astro";
+const { data } = Astro.props;
+const basics = data[0];
+const command = data[1];
 
-const translationsModule = translations as {
-  default: {
-    basics: any;
-    command: any;
-  };
-};
-const { basics = {}, command = {} } = translationsModule.default || {};
 const profiles = basics.profiles || [];
 
 const SOCIAL_ICONS = profiles.reduce(
