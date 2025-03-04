@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import chromium from "@sparticuz/chromium";
 
 const generatePDF = async () => {
   const browser = await puppeteer.launch();
