@@ -1,16 +1,14 @@
 import type { Translations } from "./types";
 
-// Carga directa sin manipulación de rutas
-const translationsMap = import.meta.glob(
-  "@locales/*.json", // Usando alias configurado
-  {
-    eager: true,
-    import: "default",
-  },
-) as Record<string, Translations>;
+// Usa la ruta absoluta en el glob
+const translationsMap = import.meta.glob("/src/i18n/locales/*.json", {
+  eager: true,
+  import: "default",
+}) as Record<string, Translations>;
+
 console.log(translationsMap);
 
-// Validación optimizada
+// Validación optimizada de idiomas disponibles
 export const availableLanguages = Object.keys(translationsMap)
   .map((path) => {
     try {
@@ -22,7 +20,7 @@ export const availableLanguages = Object.keys(translationsMap)
   })
   .filter(Boolean) as string[];
 
-// Función a prueba de errores
+// Función a prueba de errores para obtener las traducciones
 export function getTranslations(lang: string): Translations {
   const safeLang = lang.toLowerCase().replace(/[^a-z]/g, "");
   return (
@@ -31,7 +29,7 @@ export function getTranslations(lang: string): Translations {
   );
 }
 
-// Implementación simplificada
+// Función para obtener el idioma en el cliente
 export function getCurrentLang(): string {
   return navigator?.language?.split("-")[0] || "en";
 }
