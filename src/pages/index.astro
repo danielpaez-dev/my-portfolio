@@ -10,13 +10,22 @@ import CoursesAndCertifications from "@components/CoursesAndCertifications.astro
 import Nav from "@components/Nav.astro";
 import Skills from "@components/Skills.astro";
 import Footer from "@components/Contact.astro";
+import { availableLanguages } from "@/i18n/utils/utils";
 
-import { getTranslations, getCurrentLang } from "@/i18n/utils/utils.ts";
-const lang = getCurrentLang(Astro.locals);
-const translations = getTranslations(lang);
+// Detectamos el idioma del cliente a partir del header "accept-language"
+const acceptLang = Astro.request.headers.get("accept-language") || "";
+const detectedLang = acceptLang.split(",")[0].split("-")[0];
+const lang = availableLanguages.includes(detectedLang)
+  ? detectedLang
+  : availableLanguages[0];
+
+// Importamos dinámicamente el archivo de traducciones correspondiente
+const translationsModule = await import(`../locales/${lang}.json`);
+
+// Extraemos las secciones de traducción que utilizaremos
 const {
   basics = {},
-  about = {},
+  about: about = {},
   experience = {},
   volunteer = {},
   education = {},
