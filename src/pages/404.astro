@@ -1,12 +1,15 @@
 ---
 import "../styles/global.css";
-import { translations } from "@/i18n/utils/utils";
-const translationsModule = translations as {
-  default: {
-    404: any;
-  };
-};
-const { 404: notFound = {} } = translationsModule.default;
+import { availableLanguages } from "@/i18n/utils/utils.ts";
+
+const acceptLang = Astro.request.headers.get("accept-language") || "";
+const detectedLang = acceptLang.split(",")[0].split("-")[0];
+const lang = availableLanguages.includes(detectedLang)
+  ? detectedLang
+  : availableLanguages[0];
+
+const translationsModule = await import(`../locales/${lang}.json`);
+const notFound = translationsModule.default["404"] || {};
 ---
 
 <!doctype html>
