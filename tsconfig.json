@@ -11,14 +11,25 @@
     "dist"
   ],
   "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "verbatimModuleSyntax": false,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "baseUrl": ".",
+    "types": ["node", "vite/client"],
     "strict": false,
     "noImplicitAny": false,
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "/src/*": [
+        "src/*"
+      ],
+      "@locales/*": [
+        "src/i18n/locales/*"
       ],
       "@components/*": [
         "src/components/*"

@@ -2,8 +2,9 @@ import { getCurrentLang, getTranslations } from "../i18n/utils/utils.ts";
 const lang = getCurrentLang(); // en SSR esto retornará "en" (por defecto) o el valor adecuado
 const translationsModule = getTranslations(lang);
 const { basics, education, certificates, skills, languages, awards } =
-  translationsModule.default;
-
+  translationsModule;
+console.log(basics);
+console.log(translationsModule);
 const jsonLdPerson = {
   "@context": "https://schema.org",
   "@type": "Person",

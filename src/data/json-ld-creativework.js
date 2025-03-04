@@ -1,7 +1,7 @@
 import { getCurrentLang, getTranslations } from "../i18n/utils/utils.ts";
 const lang = getCurrentLang(); // en SSR esto retornará "en" (por defecto) o el valor adecuado
 const translationsModule = getTranslations(lang);
-const { projects, basics } = translationsModule.default;
+const { projects, basics } = translationsModule;
 
 const project =
   projects && projects.list && projects.list.length ? projects.list[0] : {};

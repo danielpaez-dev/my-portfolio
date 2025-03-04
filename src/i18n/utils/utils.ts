@@ -1,28 +1,37 @@
 import type { Translations } from "./types";
 
-type Language = string;
+// Carga directa sin manipulación de rutas
+const translationsMap = import.meta.glob(
+  "@locales/*.json", // Usando alias configurado
+  {
+    eager: true,
+    import: "default",
+  },
+) as Record<string, Translations>;
+console.log(translationsMap);
 
-const translationsMap = import.meta.glob("../locales/*.json", {
-  eager: true,
-  import: "default",
-});
-
+// Validación optimizada
 export const availableLanguages = Object.keys(translationsMap)
-  .map((path) => path.match(/\/([\w-]+)\.json$/)?.[1])
+  .map((path) => {
+    try {
+      return new URL(path).searchParams.get("lang");
+    } catch {
+      const match = path.match(/([a-z]{2})\.json$/i);
+      return match ? match[1].toLowerCase() : null;
+    }
+  })
   .filter(Boolean) as string[];
 
-export function getCurrentLang(locals?: { lang?: string }): Language {
-  if (import.meta.env.SSR) {
-    // En el servidor, se espera que se pase Astro.locals
-    return locals?.lang || "en";
-  } else {
-    // En el cliente: leer de la cookie o de navigator
-    const cookieLang = document.cookie.match(/lang=([^;]+)/)?.[1];
-    return cookieLang || navigator.language.split("-")[0];
-  }
+// Función a prueba de errores
+export function getTranslations(lang: string): Translations {
+  const safeLang = lang.toLowerCase().replace(/[^a-z]/g, "");
+  return (
+    translationsMap[`/src/i18n/locales/${safeLang}.json`] ||
+    translationsMap["/src/i18n/locales/en.json"]
+  );
 }
 
-export function getTranslations(lang: Language) {
-  const validLang = availableLanguages.includes(lang) ? lang : "en";
-  return translationsMap[`../locales/${validLang}.json`] as Translations;
+// Implementación simplificada
+export function getCurrentLang(): string {
+  return navigator?.language?.split("-")[0] || "en";
 }

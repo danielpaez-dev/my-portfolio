@@ -19,11 +19,9 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
-    "@astrojs/vercel": "^8.1.0",
-    "@mdx-js/mdx": "^3.1.0",
+    "@astrojs/vercel": "^8.0.4",
     "@sparticuz/chromium": "^133.0.0",
     "@tailwindcss/vite": "^4.0.5",
-    "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
@@ -42,6 +40,8 @@
     "prettier --write"
   ],
   "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.2",
     "globals": "^15.15.0",
@@ -50,6 +50,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.0.5",
     "typescript": "^5.4.5",
+    "vite": "^4.5.2",
     "wait-on": "^8.0.2"
   },
   "prettier": {
