@@ -1,15 +1,17 @@
 ---
 import "../styles/global.css";
-import { availableLanguages } from "@/i18n/utils/utils.ts";
+import { getTranslations, availableLanguages } from "@/i18n/utils/utils";
 
+// Detectamos el idioma del cliente a partir del header "accept-language"
 const acceptLang = Astro.request.headers.get("accept-language") || "";
 const detectedLang = acceptLang.split(",")[0].split("-")[0];
 const lang = availableLanguages.includes(detectedLang)
   ? detectedLang
   : availableLanguages[0];
 
-const translationsModule = await import(`../locales/${lang}.json`);
-const notFound = translationsModule.default["404"] || {};
+// Importamos dinámicamente el archivo de traducciones correspondiente
+const translations = getTranslations(lang);
+const notFound = translations["404"] || {};
 ---
 
 <!doctype html>

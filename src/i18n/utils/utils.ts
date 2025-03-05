@@ -1,14 +1,12 @@
 import type { Translations } from "./types";
 
-// Usa la ruta absoluta en el glob
+// Usa la ruta absoluta en el glob para cargar todos los archivos de traducción de forma "eager"
 const translationsMap = import.meta.glob("/src/i18n/locales/*.json", {
   eager: true,
   import: "default",
 }) as Record<string, Translations>;
 
-console.log(translationsMap);
-
-// Validación optimizada de idiomas disponibles
+// Validación optimizada de idiomas disponibles: se extrae el código de idioma del nombre del archivo
 export const availableLanguages = Object.keys(translationsMap)
   .map((path) => {
     try {
@@ -20,7 +18,7 @@ export const availableLanguages = Object.keys(translationsMap)
   })
   .filter(Boolean) as string[];
 
-// Función a prueba de errores para obtener las traducciones
+// Función a prueba de errores para obtener las traducciones según el idioma solicitado
 export function getTranslations(lang: string): Translations {
   const safeLang = lang.toLowerCase().replace(/[^a-z]/g, "");
   return (
@@ -29,7 +27,7 @@ export function getTranslations(lang: string): Translations {
   );
 }
 
-// Función para obtener el idioma en el cliente
+// Función para obtener el idioma en el cliente (útil en el navegador)
 export function getCurrentLang(): string {
   return navigator?.language?.split("-")[0] || "en";
 }

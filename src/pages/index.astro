@@ -10,7 +10,7 @@ import CoursesAndCertifications from "@components/CoursesAndCertifications.astro
 import Nav from "@components/Nav.astro";
 import Skills from "@components/Skills.astro";
 import Footer from "@components/Contact.astro";
-import { availableLanguages } from "@/i18n/utils/utils";
+import { getTranslations, availableLanguages } from "@/i18n/utils/utils";
 
 // Detectamos el idioma del cliente a partir del header "accept-language"
 const acceptLang = Astro.request.headers.get("accept-language") || "";
@@ -20,7 +20,7 @@ const lang = availableLanguages.includes(detectedLang)
   : availableLanguages[0];
 
 // Importamos dinámicamente el archivo de traducciones correspondiente
-const translationsModule = await import(`../locales/${lang}.json`);
+const translations = getTranslations(lang);
 
 // Extraemos las secciones de traducción que utilizaremos
 const {
@@ -41,7 +41,7 @@ const {
   footer = {},
   active = {},
   print = {},
-} = translationsModule.default;
+} = translations;
 
 const heroPrintData = {
   "image-hero": print["image-hero"],

@@ -12,6 +12,7 @@ export interface Translations {
   interests?: Record<string, any>;
   references?: Record<string, any>;
   projects?: Record<string, any>;
+  command?: Record<string, any>;
   footer?: Record<string, any>;
   active?: Record<string, any>;
   print?: Record<string, any>;

@@ -2,8 +2,13 @@
 import Analytics from "@vercel/analytics/astro";
 import SpeedInsights from "@vercel/speed-insights/astro";
 import { getCurrentLang, getTranslations } from "../i18n/utils/utils.ts";
-const lang = getCurrentLang(Astro.locals); // en SSR, se pasará Astro.locals; en build time, usará "en" por defecto
+const AnalyticsComponent = Analytics as any;
+const SpeedInsightsComponent = SpeedInsights as any;
+
+// Se usa Astro.locals.lang si existe, de lo contrario se usa getCurrentLang()
+const lang = (Astro.locals as any)?.lang ?? getCurrentLang();
 const translationsModule = getTranslations(lang);
+
 import personData from "../data/json-ld-person.js";
 import portfolioData from "../data/json-ld-creativework.js";
 const faviconUrl = "/favicon.png";
@@ -22,7 +27,8 @@ const { name, image, summary, url, shareTitle } = basics;
     <link rel="icon" href={faviconUrl} type="image/png" />
 
     <!-- Script para establecer el tema lo antes posible -->
-    <!--<script is:inline>
+    <!--
+    <script is:inline>
       (function () {
         const storedTheme = localStorage.getItem("theme");
         let theme;
@@ -39,7 +45,8 @@ const { name, image, summary, url, shareTitle } = basics;
           document.documentElement.classList.remove("dark");
         }
       })();
-    </script> -->
+    </script>
+    -->
 
     <!-- Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(personData)} />
@@ -70,7 +77,9 @@ const { name, image, summary, url, shareTitle } = basics;
 
   <body>
     <slot />
+    {/** @ts-ignore */}
     <Analytics />
+    {/** @ts-ignore */}
     <SpeedInsights />
   </body>
 </html>
