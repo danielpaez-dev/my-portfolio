@@ -27,7 +27,17 @@ export function getTranslations(lang: string): Translations {
   );
 }
 
-// Función para obtener el idioma en el cliente (útil en el navegador)
-export function getCurrentLang(): string {
-  return navigator?.language?.split("-")[0] || "en";
+export function getCurrentLang(request?: Request): string {
+  if (request) {
+    const headerLang =
+      request.headers.get("Accept-Language")?.split("-")[0] || "en";
+    return availableLanguages.includes(headerLang) ? headerLang : "en";
+  }
+
+  if (typeof navigator !== "undefined") {
+    const browserLang = navigator.language.split("-")[0];
+    return availableLanguages.includes(browserLang) ? browserLang : "en";
+  }
+
+  return "en";
 }
