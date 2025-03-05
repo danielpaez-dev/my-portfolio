@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "npm run generate-readmes && concurrently \"astro dev --host\" \"wait-on http://localhost:4321 && npm run generate-pdf\"",
-    "start": "npm run generate-readmes && concurrently \"astro dev\" \"wait-on http://localhost:4321 && npm run generate-pdf\"",
+    "start": "npm run dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -13,14 +13,11 @@
     "test": "echo \"No tests specified\"",
     "generate-readmes": "node ./generate-readmes.js",
     "build:readmes": "npm run build && npm run generate-readmes",
-    "postinstall": "npx puppeteer browsers install chrome",
-    "postbuild": "node ./generate-pdf.js",
     "generate-pdf": "node ./generate-pdf.js"
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
     "@astrojs/vercel": "^8.0.4",
-    "@sparticuz/chromium": "^133.0.0",
     "@tailwindcss/vite": "^4.0.5",
     "@types/react-dom": "^19.0.3",
     "@vercel/analytics": "^1.5.0",
@@ -31,7 +28,7 @@
     "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "puppeteer": "^24.2.1",
+    "puppeteer": "^22.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remark-gfm": "^4.0.1"

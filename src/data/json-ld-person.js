@@ -3,8 +3,6 @@ const lang = getCurrentLang(); // en SSR esto retornará "en" (por defecto) o el
 const translationsModule = getTranslations(lang);
 const { basics, education, certificates, skills, languages, awards } =
   translationsModule;
-console.log(basics);
-console.log(translationsModule);
 const jsonLdPerson = {
   "@context": "https://schema.org",
   "@type": "Person",
