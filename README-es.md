@@ -10,7 +10,7 @@ No dude en ponerse en contacto conmigo para cualquier pregunta o sugerencia
 
 📧 Email: [danielpaez.dev@proton.me](mailto:danielpaez.dev@proton.me)
 
-📥 CV: [Download CV.pdf](CV.pdf)
+📥 CV: [Download CV.pdf](./public/CV.pdf)
 
 ## 🛠️ Stack
 
