@@ -288,7 +288,6 @@
   ],
   "projects": {
     "title": "Projects",
-    "icon": ":bust_in_silhouette:",
     "list": [
       {
         "name": "Portfolio",
@@ -304,13 +303,12 @@
           "Tailwind",
           "HTML",
           "Vercel",
-          "Figma",
           "Markdown"
         ]
       },
       {
         "name": "Minesweeper",
-        "description": "I built a minesweeper based on Google minesweeper with JavaScript improving the gameplay. I used OOP, arrays, flood fill, events, states, local storage and closures among others.",
+        "description": "Built a minesweeper based on Google minesweeper with JavaScript improving the gameplay. I used OOP, arrays, flood fill, events, states, local storage and closures among others.",
         "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
@@ -319,7 +317,7 @@
       },
       {
         "name": "Little Lemon Restaurant",
-        "description": "I developed the final project of the Coursera 'Meta Front-End Developer' specialization with React, testing with Jest, form validation with Formik and Yup, React-Bootstrap and advanced SCSS for styles, localStorage, among others.",
+        "description": "Developed the final project of the Coursera's 'Meta Front-End Developer' specialization with React, testing with Jest, form validation with Formik and Yup, React-Bootstrap and advanced SCSS for styles, among others.",
         "highlights": [""],
         "url": "https://little-lemon-restaurant-danielpaezdev.netlify.app/",
         "githubURL": "https://github.com/danielpaez-dev/little-lemon-restaurant.git",
