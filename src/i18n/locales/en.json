@@ -213,11 +213,6 @@
         "icon": "./icons/python.svg"
       },
       {
-        "name": "SQL",
-        "keywords": ["", "", ""],
-        "icon": "./icons/sql.svg"
-      },
-      {
         "name": "HTML",
         "keywords": ["", ""],
         "icon": "./icons/html.svg"
@@ -233,11 +228,6 @@
         "icon": "./icons/git.svg"
       },
       {
-        "name": "GitHub",
-        "keywords": ["", ""],
-        "icon": "./icons/github.svg"
-      },
-      {
         "name": "Figma",
         "keywords": ["", ""],
         "icon": "./icons/figma.svg"
@@ -251,6 +241,11 @@
         "name": "Markdown",
         "keywords": ["", ""],
         "icon": "./icons/markdown.svg"
+      },
+      {
+        "name": "Jest",
+        "keywords": ["", ""],
+        "icon": "./icons/jest.svg"
       }
     ]
   },
@@ -322,6 +317,15 @@
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
         "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
+      },
+      {
+        "name": "Little Lemon Restaurant",
+        "description": "I developed the final project of the Coursera 'Meta Front-End Developer' specialization with React, testing with Jest, form validation with Formik and Yup, React-Bootstrap and advanced SCSS for styles, localStorage, among others.",
+        "highlights": [""],
+        "url": "https://little-lemon-restaurant-danielpaezdev.netlify.app/",
+        "githubURL": "https://github.com/danielpaez-dev/little-lemon-restaurant.git",
+        "image": "",
+        "keywords": ["React", "Jest", "Bootstrap", "SCSS", "HTML", "Markdown"]
       }
     ]
   },
@@ -374,6 +378,7 @@
   "print": {
     "Hero": true,
     "image-hero": false,
+    "summary-hero": false,
     "description-hero": false,
     "About": true,
     "Experience": false,
@@ -381,7 +386,7 @@
     "Education": false,
     "CoursesAndCertifications": true,
     "Skills": true,
-    "Footer": true,
-    "Nav": true
+    "Footer": false,
+    "Nav": false
   }
 }

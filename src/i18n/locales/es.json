@@ -111,7 +111,7 @@
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
-        "summary": "Completé una especialización intensiva de frontend gracias al staff de Meta donde perfeccioné el uso avanzado de React, JavaScript, HTML y CSS. El curso incluye el uso de Git y GitHub para control de versiones y principios de diseño UI/UX con Figma. Concluye con un proyecto web basado en un restaurante ficticio, Little Lemon. Además, ofrece preparación para entrevistas técnicas, incluyendo pseudocódigo, diagramas de flujo, estructuras de datos y algoritmos.",
+        "summary": "Completé una especialización intensiva de frontend gracias a Meta donde perfeccioné el uso avanzado de React, JavaScript, HTML y CSS. El curso incluye el uso de Git y GitHub, principios de diseño UI/UX con Figma. Concluye con un proyecto web basado en un restaurante ficticio, Little Lemon. Además, ofrece preparación para entrevistas técnicas, incluyendo pseudocódigo, diagramas de flujo, estructuras de datos y algoritmos.",
         "skills": [
           "HTML",
           "CSS",
@@ -212,11 +212,6 @@
         "icon": "./icons/python.svg"
       },
       {
-        "name": "SQL",
-        "keywords": ["", "", ""],
-        "icon": "./icons/sql.svg"
-      },
-      {
         "name": "HTML",
         "keywords": ["", ""],
         "icon": "./icons/html.svg"
@@ -232,11 +227,6 @@
         "icon": "./icons/git.svg"
       },
       {
-        "name": "GitHub",
-        "keywords": ["", ""],
-        "icon": "./icons/github.svg"
-      },
-      {
         "name": "Figma",
         "keywords": ["", ""],
         "icon": "./icons/figma.svg"
@@ -250,6 +240,11 @@
         "name": "Markdown",
         "keywords": ["", ""],
         "icon": "./icons/markdown.svg"
+      },
+      {
+        "name": "Jest",
+        "keywords": ["", ""],
+        "icon": "./icons/jest.svg"
       }
     ]
   },
@@ -319,6 +314,15 @@
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
         "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
+      },
+      {
+        "name": "Restaurante Little Lemon",
+        "description": "Desarrollé el proyecto final de la especialización de 'Desarrollador de Front-End de Meta' con React, testing con Jest, validación de formularios con Formik y Yup, React-Bootstrap y SCSS avanzado para estilos, localStorage, entre otros.",
+        "highlights": [""],
+        "url": "https://little-lemon-restaurant-danielpaezdev.netlify.app/",
+        "githubURL": "https://github.com/danielpaez-dev/little-lemon-restaurant.git",
+        "image": "",
+        "keywords": ["React", "Jest", "Bootstrap", "SCSS", "HTML", "Markdown"]
       }
     ]
   },
@@ -372,7 +376,7 @@
     "Hero": true,
     "image-hero": false,
     "description-hero": false,
-    "About": true,
+    "About": false,
     "Experience": false,
     "Projects": true,
     "Education": false,

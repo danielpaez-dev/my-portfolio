@@ -36,7 +36,7 @@ const heroPrintData = data[1];
             basicInfo.summary && (
               <p
                 itemprop="description"
-                class={`${heroPrintData["description-hero"]} ? '' : 'noprint'`}
+                class={`${heroPrintData["description-hero"] ? "" : "noprint"}`}
               >
                 {basicInfo.summary}
               </p>
