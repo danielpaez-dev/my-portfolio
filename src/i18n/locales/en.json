@@ -102,7 +102,6 @@
     }
   ],
   "certificates": {
-    "icon": ":scroll:",
     "title": "Certificates",
     "list": [
       {
@@ -112,7 +111,7 @@
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
-        "summary": "Completed an intensive frontend specialisation thanks to Meta staff where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub for version control and UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
+        "summary": "Completed an intensive frontend specialisation thanks to Meta where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub, UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
         "skills": [
           "HTML",
           "CSS",
@@ -198,6 +197,11 @@
         "icon": "./icons/sass.svg"
       },
       {
+        "name": "Jest",
+        "keywords": ["", ""],
+        "icon": "./icons/jest.svg"
+      },
+      {
         "name": "Django",
         "keywords": ["", "", ""],
         "icon": "./icons/django.svg"
@@ -241,11 +245,6 @@
         "name": "Markdown",
         "keywords": ["", ""],
         "icon": "./icons/markdown.svg"
-      },
-      {
-        "name": "Jest",
-        "keywords": ["", ""],
-        "icon": "./icons/jest.svg"
       }
     ]
   },
