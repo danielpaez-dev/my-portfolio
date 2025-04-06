@@ -290,6 +290,15 @@
     "title": "Projects",
     "list": [
       {
+        "name": "Note App",
+        "description": "Developed and deployed a full-stack application with React and Django that allows authenticated users to manage their notes (create, edit and delete) through a RESTful API, Auth0 and SQLite.",
+        "highlights": [""],
+        "url": "https://note-app-danielpaezdev.netlify.app/",
+        "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
+        "image": "",
+        "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS", "Markdown"]
+      },
+      {
         "name": "Portfolio",
         "description": "A minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file.",
         "highlights": [""],

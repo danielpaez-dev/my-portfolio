@@ -290,6 +290,24 @@
     "title": "Proyectos",
     "list": [
       {
+        "name": "Note App",
+        "description": "Desarrollé y desplegué una aplicación full-stack con React y Django que permite a usuarios autenticados gestionar sus notas (crear, editar y eliminar) mediante una API RESTful, Auth0 y SQLite.",
+        "highlights": [""],
+        "url": "https://note-app-danielpaezdev.netlify.app/",
+        "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
+        "image": "",
+        "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS", "Markdown"]
+      },
+      {
+        "name": "Buscaminas",
+        "description": "Construí un buscaminas basado en el buscaminas de Google con JavaScript mejorando la jugabilidad. Usé POO, matrices, flood fill, eventos, estados, local storage y closures entre otros.",
+        "highlights": [""],
+        "url": "",
+        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
+        "image": "",
+        "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
+      },
+      {
         "name": "Portafolio",
         "description": "Creé una plantilla de CV minimalista con exportación automatizada de CV.pdf, documentación y traducción mediante un único archivo .json",
         "highlights": [""],
@@ -304,15 +322,6 @@
           "Vercel",
           "Markdown"
         ]
-      },
-      {
-        "name": "Buscaminas",
-        "description": "Construí un buscaminas basado en el buscaminas de Google con JavaScript mejorando la jugabilidad. Usé POO, matrices, flood fill, eventos, estados, local storage y closures entre otros.",
-        "highlights": [""],
-        "url": "",
-        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
-        "image": "",
-        "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
       },
       {
         "name": "Restaurante Little Lemon",
