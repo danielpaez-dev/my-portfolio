@@ -290,10 +290,10 @@
     "title": "Proyectos",
     "list": [
       {
-        "name": "Note App",
+        "name": "Aplicación FullStack de Notas",
         "description": "Desarrollé y desplegué una aplicación full-stack con React y Django que permite a usuarios autenticados gestionar sus notas (crear, editar y eliminar) mediante una API RESTful, Auth0 y SQLite.",
         "highlights": [""],
-        "url": "https://note-app-danielpaezdev.netlify.app/",
+        "url": "",
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
         "image": "",
         "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS", "Markdown"]
