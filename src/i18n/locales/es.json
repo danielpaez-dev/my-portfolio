@@ -291,7 +291,7 @@
     "list": [
       {
         "name": "Aplicación FullStack de Notas",
-        "description": "Desarrollé y desplegué una aplicación full-stack con React y Django que permite a usuarios autenticados gestionar sus notas (crear, editar y eliminar) mediante una API RESTful, Auth0 y SQLite.",
+        "description": "Desarrollé una aplicación full-stack con React donde apliqué el patrón de diseño Atomic y Django que permite a usuarios autenticados gestionar sus notas (CRUD) mediante una API RESTful, Auth0 y SQLite.",
         "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
@@ -309,13 +309,14 @@
       },
       {
         "name": "Portafolio",
-        "description": "Creé una plantilla de CV minimalista con exportación automatizada de CV.pdf, documentación y traducción mediante un único archivo .json",
+        "description": "Creé y desplegúe mi portfolio y creé una plantilla de CV minimalista con exportación automatizada de CV.pdf, documentación y traducción mediante un único archivo .json mediante SSR",
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
         "keywords": [
           "Astro",
+          "React",
           "TypeScript",
           "Tailwind",
           "HTML",

@@ -291,7 +291,7 @@
     "list": [
       {
         "name": "FullStack Note App",
-        "description": "Developed and deployed a full-stack application with React and Django that allows authenticated users to manage their notes (create, edit and delete) through a RESTful API, Auth0 and SQLite.",
+        "description": "Developed a full-stack application with React using atomic design and Django that allows authenticated users to manage their notes (CRUD) through a RESTful API, Auth0 and SQLite.",
         "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
@@ -300,7 +300,7 @@
       },
       {
         "name": "Portfolio",
-        "description": "A minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file.",
+        "description": "Created and deployed a minimalist portfolio with a template with an automated CV.pdf export, documentation and translation all just by editing a .json file with SSR.",
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
