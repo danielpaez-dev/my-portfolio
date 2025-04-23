@@ -300,7 +300,7 @@
       },
       {
         "name": "Portfolio",
-        "description": "Created and deployed a minimalist portfolio with a template with an automated CV.pdf export, documentation and translation all just by editing a .json file with SSR.",
+        "description": "Created and deployed a minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file with SSR.",
         "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
