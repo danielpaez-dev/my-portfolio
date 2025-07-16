@@ -28,6 +28,12 @@
     },
     "profiles": [
       {
+        "network": "Web",
+        "username": "",
+        "url": "https://www.danielpaez.dev",
+        "icon": "./icons/world.svg"
+      },
+      {
         "network": "LinkedIn",
         "username": "danielpaez-dev",
         "url": "https://www.linkedin.com/in/danielpaez-dev",
@@ -105,13 +111,33 @@
     "title": "Certificates",
     "list": [
       {
+        "name": "Data Science & Machine Learning Bootcamp",
+        "date": "01/09/2025",
+        "score": "Mark: x/10",
+        "issuer": "4GeeksAcademy",
+        "credential_url": "",
+        "credential_id": "",
+        "summary": "Taking an intensive bootcamp in data science and machine learning (AI) acquiring skills in data processing, analysis, visualisation and building Machine Learning models.",
+        "skills": [
+          "Python",
+          "Numpy",
+          "Pandas",
+          "Matplotlib",
+          "Seaborn",
+          "SQL",
+          "Git",
+          "GitHub"
+        ],
+        "image": ""
+      },
+      {
         "name": "Meta Front-End Developer",
         "date": "30/12/2024",
-        "score": "Note: 9.68/10",
+        "score": "Mark: 9.68/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/professional-cert/W9PILWS59SMQ",
         "credential_id": "W9PILWS59SMQ",
-        "summary": "Completed an intensive frontend specialisation thanks to Meta where I perfected the advanced use of React, JavaScript, HTML and CSS. The course includes the use of Git and GitHub, UI/UX design principles with Figma. It concludes with a web project based on a fictional restaurant, Little Lemon. It also offers preparation for technical interviews, including pseudocode, flowcharts, data structures and algorithms.",
+        "summary": "Completed an intensive frontend specialisation (Meta), mastering React, JavaScript, HTML, CSS, Git/GitHub and UI/UX design (Figma). Includes full web project development (Little Lemon) and preparation for technical interviews (algorithms, data structures).",
         "skills": [
           "HTML",
           "CSS",
@@ -127,7 +153,7 @@
       {
         "name": "Meta Introduction to Databases for Back-End Development",
         "date": "25/01/2024",
-        "score": "Note: 9.5/10",
+        "score": "Mark: 9.5/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
         "credential_id": "I1MMWJDX2YG4",
@@ -138,7 +164,7 @@
       {
         "name": "Meta Programming with Python",
         "date": "21/01/2025",
-        "score": "Note: 10/10",
+        "score": "Mark: 10/10",
         "issuer": "Coursera",
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
         "credential_id": "H3ABAC0971BS",
@@ -161,6 +187,21 @@
     "title": "Skills",
     "subtitle": "Hard Skills",
     "list": [
+      {
+        "name": "Numpy",
+        "keywords": ["", ""],
+        "icon": "./icons/numpy.svg"
+      },
+      {
+        "name": "Pandas",
+        "keywords": ["", ""],
+        "icon": "./icons/pandas.svg"
+      },
+      {
+        "name": "Seaborn",
+        "keywords": ["", ""],
+        "icon": "./icons/seaborn.svg"
+      },
       {
         "name": "Astro",
         "keywords": ["", ""],
