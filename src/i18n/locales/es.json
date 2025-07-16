@@ -117,7 +117,7 @@
         "issuer": "4GeeksAcademy",
         "credential_url": "",
         "credential_id": "",
-        "summary": "Cursando un bootcamp intensivo de ciencias de datos y machine learning (AI) adquiriendo habilidades en el procesamiento, análisis, visualización de datos y la construcción de modelos de Machine Learning",
+        "summary": "Cursando un bootcamp intensivo de ciencias de datos y machine learning (AI) adquiriendo habilidades en el procesamiento, análisis, visualización de datos y la construcción de modelos de Machine Learning.",
         "skills": [
           "Python",
           "Numpy",
@@ -218,11 +218,6 @@
         "icon": "./icons/typescript.svg"
       },
       {
-        "name": "JavaScript",
-        "keywords": ["", "", "", ""],
-        "icon": "./icons/javascript.svg"
-      },
-      {
         "name": "Tailwind",
         "keywords": ["", "", ""],
         "icon": "./icons/tailwind.svg"
@@ -251,16 +246,6 @@
         "name": "Python",
         "keywords": ["", "", ""],
         "icon": "./icons/python.svg"
-      },
-      {
-        "name": "HTML",
-        "keywords": ["", ""],
-        "icon": "./icons/html.svg"
-      },
-      {
-        "name": "CSS",
-        "keywords": ["", "", ""],
-        "icon": "./icons/css.svg"
       },
       {
         "name": "Git",
@@ -350,15 +335,7 @@
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
-        "keywords": [
-          "Astro",
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "HTML",
-          "Vercel",
-          "Markdown"
-        ]
+        "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
       },
       {
         "name": "Restaurante Little Lemon",

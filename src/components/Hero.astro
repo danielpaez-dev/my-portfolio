@@ -42,51 +42,6 @@ const heroPrintData = data[1];
               </p>
             )
           }
-          {
-            basicInfo.location && basicInfo.location.url && (
-              <a
-                class="flex justify-center"
-                aria-label="Location"
-                href={basicInfo.location.url}
-              >
-                {basicInfo.location.city &&
-                  basicInfo.location.region &&
-                  (() => {
-                    const direction = `${basicInfo.location.city}, ${basicInfo.location.region}`;
-                    return (
-                      <>
-                        {basicInfo.location.icon && (
-                          <img
-                            src={basicInfo.location.icon}
-                            alt={direction}
-                            title={direction}
-                            class="icon-dark mr-1.5"
-                            width={16}
-                            height={16}
-                            style="width:16px; height:16px;"
-                          />
-                        )}
-                        <span
-                          itemprop="address"
-                          itemscope
-                          itemtype="http://schema.org/PostalAddress"
-                        >
-                          <meta
-                            itemprop="addressLocality"
-                            content={basicInfo.location.city}
-                          />
-                          <meta
-                            itemprop="addressRegion"
-                            content={basicInfo.location.region}
-                          />
-                          {direction}
-                        </span>
-                      </>
-                    );
-                  })()}
-              </a>
-            )
-          }
         </div>
 
         <ul
@@ -94,6 +49,49 @@ const heroPrintData = data[1];
           role="list"
           aria-label="Contact information"
         >
+          {
+            basicInfo.location && (
+              <>
+                <li class="flex items-center">
+                  <a
+                    href={basicInfo.location.url}
+                    target="_blank"
+                    rel="noopener"
+                    class="flex items-center"
+                    aria-label="Location"
+                  >
+                    {basicInfo.location.icon && (
+                      <img
+                        src={basicInfo.location.icon}
+                        alt="Location"
+                        title={`${basicInfo.location.city}, ${basicInfo.location.region}`}
+                        class="icon profileIcon noprint mr-1.5"
+                        width={28}
+                        height={28}
+                        style="width:28px; height:28px;"
+                      />
+                    )}
+                  </a>
+                </li>
+                <div class="print hidden text-nowrap">
+                  <span class="mx-3.5 inline-flex">
+                    {basicInfo.location.icon && (
+                      <img
+                        src={basicInfo.location.icon}
+                        alt="Location"
+                        title={`${basicInfo.location.city}, ${basicInfo.location.region}`}
+                        class="icon profileIcon mr-0.5"
+                        width={20}
+                        height={20}
+                        style="width:20px; height:20px; border: none;"
+                      />
+                    )}
+                    <span>{`${basicInfo.location.city}, ${basicInfo.location.region}`}</span>
+                  </span>
+                </div>
+              </>
+            )
+          }
           {
             basicInfo.contact &&
               Object.keys(basicInfo.contact).map((categorie, index) => {

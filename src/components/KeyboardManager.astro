@@ -22,7 +22,7 @@ const SOCIAL_ICONS = profiles.reduce(
 const profilesInfo = profiles.map(({ network, url }) => {
   const icon = SOCIAL_ICONS[network];
   const firstLetter = network[0].toUpperCase();
-  const hotkey = network === "Leetcode" ? "ctrl+M" : `ctrl+${firstLetter}`;
+  const hotkey = network === "Leetcode" ? "alt+M" : `alt+${firstLetter}`;
 
   return {
     id: network,
@@ -85,7 +85,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
       id: "print",
       title: command.action,
       icon: `<img src="./icons/print.svg" alt="Print icon" style="margin-right: 8px" width="16" height="16" />`,
-      hotkey: "ctrl+P",
+      hotkey: "alt+P",
       section: "Actions",
       handler: () => {
         window.print();
@@ -101,7 +101,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     const event = new KeyboardEvent("keydown", {
       key: "k",
       code: "KeyK",
-      ctrlKey: true,
+      altKey: true,
       bubbles: true,
       cancelable: true,
     });

@@ -218,11 +218,6 @@
         "icon": "./icons/typescript.svg"
       },
       {
-        "name": "JavaScript",
-        "keywords": ["", "", "", ""],
-        "icon": "./icons/javascript.svg"
-      },
-      {
         "name": "Tailwind",
         "keywords": ["", "", ""],
         "icon": "./icons/tailwind.svg"
@@ -256,16 +251,6 @@
         "name": "Python",
         "keywords": ["", "", ""],
         "icon": "./icons/python.svg"
-      },
-      {
-        "name": "HTML",
-        "keywords": ["", ""],
-        "icon": "./icons/html.svg"
-      },
-      {
-        "name": "CSS",
-        "keywords": ["", "", ""],
-        "icon": "./icons/css.svg"
       },
       {
         "name": "Git",
@@ -337,7 +322,7 @@
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
         "image": "",
-        "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS", "Markdown"]
+        "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS"]
       },
       {
         "name": "Portfolio",
@@ -346,15 +331,7 @@
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
-        "keywords": [
-          "Astro",
-          "React",
-          "TypeScript",
-          "Tailwind",
-          "HTML",
-          "Vercel",
-          "Markdown"
-        ]
+        "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
       },
       {
         "name": "Minesweeper",
@@ -363,7 +340,7 @@
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
-        "keywords": ["JavaScript", "CSS", "HTML", "Markdown"]
+        "keywords": ["JavaScript", "CSS", "HTML"]
       },
       {
         "name": "Little Lemon Restaurant",
@@ -372,7 +349,7 @@
         "url": "https://little-lemon-restaurant-danielpaezdev.netlify.app/",
         "githubURL": "https://github.com/danielpaez-dev/little-lemon-restaurant.git",
         "image": "",
-        "keywords": ["React", "Jest", "Bootstrap", "SCSS", "HTML", "Markdown"]
+        "keywords": ["React", "Jest", "Bootstrap", "SCSS"]
       }
     ]
   },
