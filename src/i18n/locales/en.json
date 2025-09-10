@@ -111,13 +111,13 @@
     "title": "Certificates",
     "list": [
       {
-        "name": "Data Science & Machine Learning Bootcamp",
-        "date": "01/09/2025",
-        "score": "Mark: x/10",
+        "name": "Data Science & Machine Learning by 4GeeksAcademy",
+        "date": "01/10/2025",
+        "score": "Completing",
         "issuer": "4GeeksAcademy",
         "credential_url": "",
         "credential_id": "",
-        "summary": "Taking an intensive bootcamp in data science and machine learning (AI) acquiring skills in data processing, analysis, visualisation and building Machine Learning models.",
+        "summary": "Intensive 16-week training course in Data Science & AI, covering the entire project lifecycle: from extraction and EDA to the development and deployment of Machine Learning models (Linear Regression, Random Forest, KNN, K-Means, recommendation systems, NLP, among others), culminating in a final project involving an audio-based music genre classifier.",
         "skills": [
           "Python",
           "Numpy",
@@ -160,17 +160,6 @@
         "summary": "Completed an introduction of databases for backend development with MySQL. The course includes normalization, common comands and queries.",
         "skills": ["MySQL", "SQL"],
         "image": ""
-      },
-      {
-        "name": "Meta Programming with Python",
-        "date": "21/01/2025",
-        "score": "Mark: 10/10",
-        "issuer": "Coursera",
-        "credential_url": "https://www.coursera.org/account/accomplishments/verify/H3ABAC0971BS",
-        "credential_id": "H3ABAC0971BS",
-        "summary": "Learned to programming with Python with this course. It includes python programming concepts, data structures, algorithms and object-oriented programming.",
-        "skills": ["Python", "HTML", "CSS"],
-        "image": ""
       }
     ]
   },
@@ -203,6 +192,26 @@
         "icon": "./icons/seaborn.svg"
       },
       {
+        "name": "Matplotlib",
+        "keywords": ["", ""],
+        "icon": "./icons/matplotlib.svg"
+      },
+      {
+        "name": "Scikit-Learn",
+        "keywords": ["", ""],
+        "icon": "./icons/scikitlearn.svg"
+      },
+      {
+        "name": "MySQL",
+        "keywords": ["", "", ""],
+        "icon": "./icons/mysql.svg"
+      },
+      {
+        "name": "Python",
+        "keywords": ["", "", ""],
+        "icon": "./icons/python.svg"
+      },
+      {
         "name": "Astro",
         "keywords": ["", ""],
         "icon": "./icons/astro.svg"
@@ -216,6 +225,11 @@
         "name": "TypeScript",
         "keywords": ["", "", ""],
         "icon": "./icons/typescript.svg"
+      },
+      {
+        "name": "JavaScript",
+        "keywords": ["", "", ""],
+        "icon": "./icons/javascript.svg"
       },
       {
         "name": "Tailwind",
@@ -233,24 +247,9 @@
         "icon": "./icons/sass.svg"
       },
       {
-        "name": "Jest",
-        "keywords": ["", ""],
-        "icon": "./icons/jest.svg"
-      },
-      {
         "name": "Django",
         "keywords": ["", "", ""],
         "icon": "./icons/django.svg"
-      },
-      {
-        "name": "MySQL",
-        "keywords": ["", "", ""],
-        "icon": "./icons/mysql.svg"
-      },
-      {
-        "name": "Python",
-        "keywords": ["", "", ""],
-        "icon": "./icons/python.svg"
       },
       {
         "name": "Git",
@@ -258,19 +257,9 @@
         "icon": "./icons/git.svg"
       },
       {
-        "name": "Figma",
+        "name": "Jest",
         "keywords": ["", ""],
-        "icon": "./icons/figma.svg"
-      },
-      {
-        "name": "Vercel",
-        "keywords": ["", ""],
-        "icon": "./icons/vercel.svg"
-      },
-      {
-        "name": "Markdown",
-        "keywords": ["", ""],
-        "icon": "./icons/markdown.svg"
+        "icon": "./icons/jest.svg"
       }
     ]
   },
