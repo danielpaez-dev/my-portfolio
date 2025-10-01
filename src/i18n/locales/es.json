@@ -113,7 +113,7 @@
       {
         "name": "Ciencias de Datos y Aprendizaje Automático de 4GeeksAcademy",
         "date": "01/10/2025",
-        "score": "Finalizando",
+        "score": "",
         "issuer": "4GeeksAcademy",
         "credential_url": "",
         "credential_id": "",
@@ -300,6 +300,15 @@
     "title": "Proyectos",
     "list": [
       {
+        "name": "BeatFinder",
+        "description": "Proyecto desarrollado con 2 compañeros (BeatFinder) para la clasificación automática de géneros musicales mediante una Red Neuronal Profunda (DNN). Realicé un EDA, extraje y analicé más de 500 características acústicas (Librosa), optimicé el modelo y desplegué la aplicación.",
+        "highlights": [""],
+        "url": "",
+        "githubURL": "https://github.com/4GeeksAcademy/beatfinder.git",
+        "image": "",
+        "keywords": ["Jupyter", "Python", "Scikitlearn", "Pandas", "Seaborn", "Matplotlib"]
+      },
+      {
         "name": "Aplicación FullStack de Notas",
         "description": "Desarrollé una aplicación full-stack con React donde apliqué el patrón de diseño Atomic y Django que permite a usuarios autenticados gestionar sus notas (CRUD) mediante una API RESTful, Auth0 y SQLite.",
         "highlights": [""],
@@ -325,15 +334,6 @@
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
         "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
-      },
-      {
-        "name": "Restaurante Little Lemon",
-        "description": "Desarrollé el proyecto final de la especialización de 'Desarrollador de Front-End de Meta' con React, testing con Jest, validación de formularios con Formik y Yup, React-Bootstrap y SCSS avanzado para estilos, localStorage, entre otros.",
-        "highlights": [""],
-        "url": "https://little-lemon-restaurant-danielpaezdev.netlify.app/",
-        "githubURL": "https://github.com/danielpaez-dev/little-lemon-restaurant.git",
-        "image": "",
-        "keywords": ["React", "Jest", "Bootstrap", "SCSS"]
       }
     ]
   },
