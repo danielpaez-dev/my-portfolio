@@ -113,7 +113,7 @@
       {
         "name": "Ciencias de Datos y Aprendizaje Automático de 4GeeksAcademy",
         "date": "01/10/2025",
-        "score": "",
+        "score": "Aprobado",
         "issuer": "4GeeksAcademy",
         "credential_url": "",
         "credential_id": "",
@@ -301,12 +301,19 @@
     "list": [
       {
         "name": "BeatFinder",
-        "description": "Proyecto desarrollado con 2 compañeros (BeatFinder) para la clasificación automática de géneros musicales mediante una Red Neuronal Profunda (DNN). Realicé un EDA, extraje y analicé más de 500 características acústicas (Librosa), optimicé el modelo y desplegué la aplicación.",
+        "description": "Proyecto desarrollado con 2 compañeros (BeatFinder) para la clasificación automática de géneros musicales mediante una Red Neuronal Profunda (DNN). Realicé un EDA, extraje y analicé más de 500 características acústicas (Librosa) y optimicé el modelo.",
         "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/4GeeksAcademy/beatfinder.git",
         "image": "",
-        "keywords": ["Jupyter", "Python", "Scikitlearn", "Pandas", "Seaborn", "Matplotlib"]
+        "keywords": [
+          "Jupyter",
+          "Python",
+          "Scikitlearn",
+          "Pandas",
+          "Seaborn",
+          "Matplotlib"
+        ]
       },
       {
         "name": "Aplicación FullStack de Notas",
@@ -324,7 +331,7 @@
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
-        "keywords": ["JavaScript", "CSS", "HTML"]
+        "keywords": ["javascript", "css", "html"]
       },
       {
         "name": "Portafolio",

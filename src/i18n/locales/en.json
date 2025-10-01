@@ -68,13 +68,7 @@
         "startDate": "",
         "endDate": "",
         "summary": "",
-        "highlights": [
-          "",
-          "",
-          "",
-          "",
-          ""
-        ]
+        "highlights": ["", "", "", "", ""]
       }
     ]
   },
@@ -86,9 +80,7 @@
       "startDate": "",
       "endDate": "",
       "summary": "",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     }
   ],
   "education": {
@@ -103,9 +95,7 @@
         "startDate": "",
         "endDate": "",
         "score": "",
-        "courses": [
-          ""
-        ]
+        "courses": [""]
       }
     ]
   },
@@ -123,7 +113,7 @@
       {
         "name": "Data Science & Machine Learning by 4GeeksAcademy",
         "date": "01/10/2025",
-        "score": "",
+        "score": "Approved",
         "issuer": "4GeeksAcademy",
         "credential_url": "",
         "credential_id": "",
@@ -168,10 +158,7 @@
         "credential_url": "https://www.coursera.org/account/accomplishments/verify/I1MMWJDX2YG4",
         "credential_id": "I1MMWJDX2YG4",
         "summary": "Completed an introduction of databases for backend development with MySQL. The course includes normalization, common comands and queries.",
-        "skills": [
-          "MySQL",
-          "SQL"
-        ],
+        "skills": ["MySQL", "SQL"],
         "image": ""
       }
     ]
@@ -191,147 +178,87 @@
     "list": [
       {
         "name": "Numpy",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/numpy.svg"
       },
       {
         "name": "Pandas",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/pandas.svg"
       },
       {
         "name": "Seaborn",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/seaborn.svg"
       },
       {
         "name": "Matplotlib",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/matplotlib.svg"
       },
       {
         "name": "Scikit-Learn",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/scikitlearn.svg"
       },
       {
         "name": "MySQL",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/mysql.svg"
       },
       {
         "name": "Python",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/python.svg"
       },
       {
         "name": "Astro",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/astro.svg"
       },
       {
         "name": "React",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/react.svg"
       },
       {
         "name": "TypeScript",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/typescript.svg"
       },
       {
         "name": "JavaScript",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/javascript.svg"
       },
       {
         "name": "Tailwind",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/tailwind.svg"
       },
       {
         "name": "Bootstrap",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/bootstrap.svg"
       },
       {
         "name": "SCSS",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/sass.svg"
       },
       {
         "name": "Django",
-        "keywords": [
-          "",
-          "",
-          ""
-        ],
+        "keywords": ["", "", ""],
         "icon": "./icons/django.svg"
       },
       {
         "name": "Git",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/git.svg"
       },
       {
         "name": "Jest",
-        "keywords": [
-          "",
-          ""
-        ],
+        "keywords": ["", ""],
         "icon": "./icons/jest.svg"
       }
     ]
@@ -364,10 +291,7 @@
   "interests": [
     {
       "name": "",
-      "keywords": [
-        "",
-        ""
-      ]
+      "keywords": ["", ""]
     }
   ],
   "references": [
@@ -382,10 +306,8 @@
     "list": [
       {
         "name": "BeatFinder",
-        "description": "Project developed with 2 colleagues (BeatFinder) for the automatic classification of musical genres using a Deep Neural Network (DNN). I conducted an EDA, extracted and analyzed over 500 acoustic features (Librosa), optimized the model, and deployed the application.",
-        "highlights": [
-          ""
-        ],
+        "description": "Project developed with 2 colleagues (BeatFinder) for the automatic classification of musical genres using a Deep Neural Network (DNN). I conducted an EDA, extracted and analyzed over 500 acoustic features (Librosa) and optimized the model.",
+        "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/4GeeksAcademy/beatfinder.git",
         "image": "",
@@ -401,50 +323,29 @@
       {
         "name": "FullStack Note App",
         "description": "Developed a full-stack application with React using atomic design and Django that allows authenticated users to manage their notes (CRUD) through a RESTful API, Auth0 and SQLite.",
-        "highlights": [
-          ""
-        ],
+        "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
         "image": "",
-        "keywords": [
-          "Django",
-          "React",
-          "SQL",
-          "Bootstrap",
-          "SCSS"
-        ]
+        "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS"]
       },
       {
         "name": "Portfolio",
         "description": "Created and deployed a minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file with SSR.",
-        "highlights": [
-          ""
-        ],
+        "highlights": [""],
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
-        "keywords": [
-          "Astro",
-          "React",
-          "TypeScript",
-          "Tailwind"
-        ]
+        "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
       },
       {
         "name": "Minesweeper",
         "description": "Built a minesweeper based on Google minesweeper with JavaScript improving the gameplay. I used OOP, arrays, flood fill, events, states, local storage and closures among others.",
-        "highlights": [
-          ""
-        ],
+        "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
-        "keywords": [
-          "JavaScript",
-          "CSS",
-          "HTML"
-        ]
+        "keywords": ["javascript", "css", "html"]
       }
     ]
   },
