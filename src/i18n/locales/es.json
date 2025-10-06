@@ -5,7 +5,7 @@
     "role": "Desarrollador frontend",
     "image": "./src/assets/images/me.webp",
     "url": "https://danielpaez.dev",
-    "summary": "Desarrollador frontend con experiencia en la creación de aplicaciones web eficientes, óptimas y estéticas.",
+    "summary": "",
     "shareTitle": "Portfolio de Daniel Páez, desarrollador front-end",
     "contact": {
       "email": {
@@ -87,30 +87,6 @@
     "title": "Educación",
     "list": [
       {
-        "institution": "",
-        "url": "",
-        "area": "",
-        "studyType": "",
-        "summary": "",
-        "startDate": "",
-        "endDate": "",
-        "score": "",
-        "courses": [""]
-      }
-    ]
-  },
-  "awards": [
-    {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    }
-  ],
-  "certificates": {
-    "title": "Certificados",
-    "list": [
-      {
         "name": "Ciencias de Datos y Aprendizaje Automático de 4GeeksAcademy",
         "date": "01/10/2025",
         "score": "Aprobado",
@@ -129,7 +105,20 @@
           "GitHub"
         ],
         "image": ""
-      },
+      }
+    ]
+  },
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": {
+    "title": "Certificados",
+    "list": [
       {
         "name": "Desarrollador front-end de Meta",
         "date": "30/12/2024",
@@ -331,7 +320,7 @@
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
-        "keywords": ["javascript", "css", "html"]
+        "keywords": ["JavaScript", "CSS", "HTML"]
       },
       {
         "name": "Portafolio",
@@ -340,7 +329,7 @@
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
-        "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
+        "keywords": ["React", "TypeScript", "Tailwind"]
       }
     ]
   },
@@ -362,7 +351,7 @@
     "About": true,
     "Experience": false,
     "Projects": true,
-    "Education": false,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,
@@ -397,7 +386,7 @@
     "About": false,
     "Experience": false,
     "Projects": true,
-    "Education": false,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,

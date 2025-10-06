@@ -15,12 +15,16 @@ html {
 h1,
 h2 {
   font-weight: 600;
-  font-size: xx-large;
 }
 
 h1 {
+  font-size: xx-large;
   text-transform: capitalize;
   font-family: Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: x-large;
 }
 
 h3 {

@@ -115,23 +115,22 @@ const skills = data[1];
                     role="list"
                     aria-label="Technologies used"
                   >
-                    {skills &&
-                      skills.list &&
-                      skills.list.length > 0 &&
-                      skills.list
-                        .filter(
-                          (skillData) =>
-                            projectData.keywords &&
-                            projectData.keywords.includes(skillData.name),
-                        )
-                        .map((skillData) => (
-                          <div role="listitem">
-                            <SkillBadge
-                              name={skillData.name}
-                              icon={skillData.icon}
-                            />
-                          </div>
-                        ))}
+                    {projectData.keywords &&
+                      projectData.keywords.map((keyword) => {
+                        const skill = skills?.list?.find((s) => s.name === keyword);
+                      // Si está, usa su icono; si no, intenta usar el icono por nombre
+                      const icon = skill
+                        ? skill.icon
+                        : `/icons/${keyword.toLowerCase()}.svg`;
+                      return (
+                        <div role="listitem">
+                          <SkillBadge
+                            name={keyword}
+                            icon={icon}
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

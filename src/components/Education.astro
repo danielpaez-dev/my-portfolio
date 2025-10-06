@@ -5,11 +5,11 @@ const education = data;
 
 <section
   id={education.title}
-  aria-labelledby="´${education.title}-heading´"
+  aria-labelledby={`${education.title}-heading`}
   itemscope
   itemtype="https://schema.org/CollectionPage"
 >
-  <h2 id="experience-heading">{education.title}</h2>
+  <h2 id="education-heading">{education.title}</h2>
   <hr />
   <div class="container flex flex-col gap-6" role="list">
     {
@@ -18,24 +18,27 @@ const education = data;
         education.list.map((item) => (
           <div role="listitem" itemscope class="flex flex-col">
             <div class="flex justify-between">
-              <h3>{item.institution}</h3>
+              <h3>{item.name}</h3>
               <div>
-                {item.startDate} - {item.endDate}
+                {item.date}
               </div>
             </div>
             <h4>
               <div class="flex justify-between">
                 <span>
                   <em>
-                    {item.area} ({item.studyType})
+                    {item.issuer}
                   </em>
                 </span>
                 <span class="font-extrabold">{item.score}</span>
               </div>
             </h4>
-            <ul class="bull">
-              <li>{item.summary}</li>
-            </ul>
+            {/* Si tienes summary, puedes mostrarlo aquí */}
+            {item.summary && (
+              <ul class="bull">
+                <li>{item.summary}</li>
+              </ul>
+            )}
           </div>
         ))
     }

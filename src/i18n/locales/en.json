@@ -5,7 +5,7 @@
     "role": "Frontend developer",
     "image": "./src/assets/images/me.webp",
     "url": "https://danielpaez.dev",
-    "summary": "Frontend developer with experience creating efficient and optimal and aesthetic web applications",
+    "summary": "",
     "shareTitle": "Daniel Páez's portfolio, front-end developer",
     "contact": {
       "email": {
@@ -87,30 +87,6 @@
     "title": "Education",
     "list": [
       {
-        "institution": "",
-        "url": "",
-        "area": "",
-        "studyType": "",
-        "summary": "",
-        "startDate": "",
-        "endDate": "",
-        "score": "",
-        "courses": [""]
-      }
-    ]
-  },
-  "awards": [
-    {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    }
-  ],
-  "certificates": {
-    "title": "Certificates",
-    "list": [
-      {
         "name": "Data Science & Machine Learning by 4GeeksAcademy",
         "date": "01/10/2025",
         "score": "Approved",
@@ -129,7 +105,20 @@
           "GitHub"
         ],
         "image": ""
-      },
+      }
+    ]
+  },
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": {
+    "title": "Certificates",
+    "list": [
       {
         "name": "Meta Front-End Developer",
         "date": "30/12/2024",
@@ -205,11 +194,6 @@
         "name": "MySQL",
         "keywords": ["", "", ""],
         "icon": "./icons/mysql.svg"
-      },
-      {
-        "name": "Python",
-        "keywords": ["", "", ""],
-        "icon": "./icons/python.svg"
       },
       {
         "name": "Astro",
@@ -336,7 +320,7 @@
         "url": "https://danielpaez.dev",
         "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
         "image": "",
-        "keywords": ["Astro", "React", "TypeScript", "Tailwind"]
+        "keywords": ["React", "TypeScript", "Tailwind"]
       },
       {
         "name": "Minesweeper",
@@ -345,7 +329,7 @@
         "url": "",
         "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
         "image": "",
-        "keywords": ["javascript", "css", "html"]
+        "keywords": ["JavaScript", "CSS", "HTML"]
       }
     ]
   },
@@ -367,7 +351,7 @@
     "About": true,
     "Experience": false,
     "Projects": true,
-    "Education": false,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": true,
@@ -402,7 +386,7 @@
     "About": true,
     "Experience": false,
     "Projects": true,
-    "Education": false,
+    "Education": true,
     "CoursesAndCertifications": true,
     "Skills": true,
     "Footer": false,
