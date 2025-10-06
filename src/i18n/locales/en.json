@@ -398,7 +398,6 @@
   "print": {
     "Hero": true,
     "image-hero": false,
-    "summary-hero": false,
     "description-hero": false,
     "About": true,
     "Experience": false,
