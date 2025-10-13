@@ -59,15 +59,15 @@ const heroPrintData = {
     <div class={print.About ? "" : "noprint"}>
       {active.About && <About data={about} data-section />}
     </div>
+    <div class={print.Projects ? "" : "noprint"}>
+      {active.Projects && <Projects data={[projects, skills]} data-section />}
+    </div>
     <div class={print.Experience ? "" : "noprint"}>
       {
         active.Experience && (
           <Experience data={[experience, skills]} data-section />
         )
       }
-    </div>
-    <div class={print.Projects ? "" : "noprint"}>
-      {active.Projects && <Projects data={[projects, skills]} data-section />}
     </div>
     <div class={print.Education ? "" : "noprint"}>
       {active.Education && <Education data={education} data-section />}

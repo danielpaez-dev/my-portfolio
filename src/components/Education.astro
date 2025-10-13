@@ -18,7 +18,13 @@ const education = data;
         education.list.map((item) => (
           <div role="listitem" itemscope class="flex flex-col">
             <div class="flex justify-between">
-              <h3>{item.name}</h3>
+              <h3><a
+                  href={item.credential_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.name}
+                </a></h3>
               <div>
                 {item.date}
               </div>
@@ -33,7 +39,6 @@ const education = data;
                 <span class="font-extrabold">{item.score}</span>
               </div>
             </h4>
-            {/* Si tienes summary, puedes mostrarlo aquí */}
             {item.summary && (
               <ul class="bull">
                 <li>{item.summary}</li>

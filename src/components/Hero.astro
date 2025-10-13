@@ -45,19 +45,19 @@ const heroPrintData = data[1];
         </div>
 
         <ul
-          class="flex flex-wrap justify-center gap-0.5 md:justify-start"
+          class="flex flex-wrap gap-0 md:justify-start"
           role="list"
           aria-label="Contact information"
         >
           {
             basicInfo.location && (
               <>
-                <li class="flex items-center">
+                <li class="flex items-center gap-0">
                   <a
                     href={basicInfo.location.url}
                     target="_blank"
                     rel="noopener"
-                    class="flex items-center"
+                    class="flex items-center gap-0"
                     aria-label="Location"
                   >
                     {basicInfo.location.icon && (
@@ -74,7 +74,7 @@ const heroPrintData = data[1];
                   </a>
                 </li>
                 <div class="print hidden text-nowrap">
-                  <span class="mx-3.5 inline-flex">
+                  <span class="mx-0 inline-flex">
                     {basicInfo.location.icon && (
                       <img
                         src={basicInfo.location.icon}
@@ -117,13 +117,13 @@ const heroPrintData = data[1];
                       </a>
                     </li>
                     <div class="print hidden text-nowrap">
-                      <span class="mx-3.5 inline-flex">
+                      <span class="mx-0 inline-flex">
                         {icon && (
                           <img
                             src={icon}
                             alt={categorie}
                             title={data}
-                            class="icon mr-1.5"
+                            class="icon mr-0.5"
                             width={20}
                             height={20}
                             style="width:20px; height:20px; border: none;"
@@ -162,7 +162,7 @@ const heroPrintData = data[1];
                     </a>
                   </li>
                   <div class="print hidden text-nowrap">
-                    <span class="mx-3.5 inline-flex">
+                    <span class="mx-0.5 inline-flex">
                       {profile.icon && (
                         <img
                           src={profile.icon}
@@ -199,7 +199,7 @@ const heroPrintData = data[1];
     }
     .print-container span {
       display: inline-block;
-      margin-right: 5px;
+      margin-right: 0px;
     }
   }
 </style>

@@ -44,30 +44,33 @@
         "username": "danielpaez-dev",
         "url": "https://github.com/danielpaez-dev",
         "icon": "./icons/github.svg"
-      },
-      {
-        "network": "Leetcode",
-        "username": "danielpaez-dev",
-        "url": "https://leetcode.com/u/danielpaez-dev/",
-        "icon": "./icons/leetcode.svg"
       }
     ]
   },
   "about": {
     "title": "About Me",
     "icon": ":bust_in_silhouette:",
-    "description": "Passionate frontend developer with experience creating efficient and optimal web applications. Currently working at a minesweeper JavaScript vanilla web application."
+    "description": "Data Scientist/ML Engineer with knowledge in Full-Stack development (React, Django) to build and deploy Machine Learning models and real-world applications."
   },
   "experience": {
     "title": "Experience",
     "list": [
       {
-        "name": "",
-        "position": "",
+        "name": "Telpark",
+        "position": "Parking Agent",
         "url": "",
-        "startDate": "",
-        "endDate": "",
-        "summary": "",
+        "startDate": "2025",
+        "endDate": "2025",
+        "summary": "Customer service offering support for facility use, mobile company app, and resolution of product and incident queries, maintenance and cleaning tasks, and cash management and billing.",
+        "highlights": ["", "", "", "", ""]
+      },
+      {
+        "name": "CHARDA 79 EVENTOS S.L",
+        "position": "Parking Agent",
+        "url": "",
+        "startDate": "2025",
+        "endDate": "2025",
+        "summary": "Independent terrace management for more than 30 tables, including communication with the bar and kitchen, providing prompt and friendly customer service, including taking orders and serving food and drinks, while maintaining a standard of cleanliness and order.",
         "highlights": ["", "", "", "", ""]
       }
     ]
@@ -312,24 +315,6 @@
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
         "image": "",
         "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS"]
-      },
-      {
-        "name": "Portfolio",
-        "description": "Created and deployed a minimalist portfolio template with an automated CV.pdf export, documentation and translation all just by editing a .json file with SSR.",
-        "highlights": [""],
-        "url": "https://danielpaez.dev",
-        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
-        "image": "",
-        "keywords": ["React", "TypeScript", "Tailwind"]
-      },
-      {
-        "name": "Minesweeper",
-        "description": "Built a minesweeper based on Google minesweeper with JavaScript improving the gameplay. I used OOP, arrays, flood fill, events, states, local storage and closures among others.",
-        "highlights": [""],
-        "url": "",
-        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
-        "image": "",
-        "keywords": ["JavaScript", "CSS", "HTML"]
       }
     ]
   },
@@ -349,7 +334,7 @@
   "active": {
     "Hero": true,
     "About": true,
-    "Experience": false,
+    "Experience": true,
     "Projects": true,
     "Education": true,
     "CoursesAndCertifications": true,
@@ -384,7 +369,7 @@
     "image-hero": false,
     "description-hero": false,
     "About": true,
-    "Experience": false,
+    "Experience": true,
     "Projects": true,
     "Education": true,
     "CoursesAndCertifications": true,

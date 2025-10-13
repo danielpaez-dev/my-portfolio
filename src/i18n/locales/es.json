@@ -13,7 +13,7 @@
         "icon": "./icons/email.svg"
       },
       "phone": {
-        "data": "",
+        "data": "696884779",
         "icon": "./icons/phone.svg"
       }
     },
@@ -44,30 +44,33 @@
         "username": "danielpaez-dev",
         "url": "https://github.com/danielpaez-dev",
         "icon": "./icons/github.svg"
-      },
-      {
-        "network": "Leetcode",
-        "username": "danielpaez-dev",
-        "url": "https://leetcode.com/u/danielpaez-dev/",
-        "icon": "./icons/leetcode.svg"
       }
     ]
   },
   "about": {
     "title": "Sobre mi",
     "icon": ":bust_in_silhouette:",
-    "description": "Desarrollador frontend apasionado con experiencia en la creación de aplicaciones web eficientes y óptimas. Actualmente trabajando en una aplicación web de buscaminas hecha con JavaScript vanilla."
+    "description": "Científico de Datos/Ingeniero de ML Full-Stack (React, Django) para construir e implementar modelos de ML y aplicaciones reales."
   },
   "experience": {
     "title": "Experiencia",
     "list": [
       {
-        "name": "",
-        "position": "",
+        "name": "Telpark",
+        "position": "Agente de Parking",
         "url": "",
-        "startDate": "",
-        "endDate": "",
-        "summary": "",
+        "startDate": "2025",
+        "endDate": "2025",
+        "summary": "Atención al cliente ofreciendo soporte del uso de instalaciones, alpicación móvil de la empresa y resolución de dudas sobre productos e incidencias, realización de tareas de mantenimiento y limpieza y gestión de caja y facturación.",
+        "highlights": ["", ""]
+      },
+      {
+        "name": "CHARDA 79 EVENTOS S.L",
+        "position": "Waiter's Assistant",
+        "url": "",
+        "startDate": "2023",
+        "endDate": "2025",
+        "summary": "Gestión autónoma de terraza para más de 30 mesas incluyendo la comunicación con barra y cocina brindando una Atención al cliente temprana y amable incluyendo comandas, servicio de comida y bebidas manteniendo un estándar de limpieza y órden.",
         "highlights": ["", ""]
       }
     ]
@@ -91,9 +94,9 @@
         "date": "01/10/2025",
         "score": "Aprobado",
         "issuer": "4GeeksAcademy",
-        "credential_url": "",
+        "credential_url": "https://certificate.4geeks.com/09ab37175986602a049625eda48151ddd4676bb2?_gl=1*s3i8h3*_gcl_au*MjkwNzg1NjcyLjE3NTg3MzI4ODc.",
         "credential_id": "",
-        "summary": "Formación intensiva de 16 semanas en Data Science & AI, cubriendo el ciclo de vida completo del proyecto: desde la extracción y EDA hasta el desarrollo y despliegue de modelos de Machine Learning (Regresión Lineal, Random Forest, KNN, K-Means, sistemas de recomendación, NLP, entre otros), culminando con un proyecto final de un clasificador de géneros musicales por audio.",
+        "summary": "Data Science & AI (16 semanas). Experiencia práctica en EDA, desarrollo y despliegue de modelos de Machine Learning (Regresión, Random Forest, KNN, K-Means, PNL) con proyecto final de clasificación de géneros musicales por NN.",
         "skills": [
           "Python",
           "Numpy",
@@ -290,7 +293,7 @@
     "list": [
       {
         "name": "BeatFinder",
-        "description": "Proyecto desarrollado con 2 compañeros (BeatFinder) para la clasificación automática de géneros musicales mediante una Red Neuronal Profunda (DNN). Realicé un EDA, extraje y analicé más de 500 características acústicas (Librosa) y optimicé el modelo.",
+        "description": "Proyecto desarrollado con 2 compañeros para la clasificación automática de géneros musicales mediante una Red Neuronal. Realicé un EDA, extraje y analicé más de 500 características acústicas (Librosa) y optimicé el modelo.",
         "highlights": [""],
         "url": "",
         "githubURL": "https://github.com/4GeeksAcademy/beatfinder.git",
@@ -312,24 +315,6 @@
         "githubURL": "https://github.com/danielpaez-dev/NoteApp.git",
         "image": "",
         "keywords": ["Django", "React", "SQL", "Bootstrap", "SCSS"]
-      },
-      {
-        "name": "Buscaminas",
-        "description": "Construí un buscaminas basado en el buscaminas de Google con JavaScript mejorando la jugabilidad. Usé POO, matrices, flood fill, eventos, estados, local storage y closures entre otros.",
-        "highlights": [""],
-        "url": "",
-        "githubURL": "https://github.com/danielpaez-dev/minesweeper.git",
-        "image": "",
-        "keywords": ["JavaScript", "CSS", "HTML"]
-      },
-      {
-        "name": "Portafolio",
-        "description": "Creé y desplegúe mi portfolio y creé una plantilla de CV minimalista con exportación automatizada de CV.pdf, documentación y traducción mediante un único archivo .json mediante SSR",
-        "highlights": [""],
-        "url": "https://danielpaez.dev",
-        "githubURL": "https://github.com/danielpaez-dev/my-portfolio.git",
-        "image": "",
-        "keywords": ["React", "TypeScript", "Tailwind"]
       }
     ]
   },
@@ -349,7 +334,7 @@
   "active": {
     "Hero": true,
     "About": true,
-    "Experience": false,
+    "Experience": true,
     "Projects": true,
     "Education": true,
     "CoursesAndCertifications": true,
@@ -384,7 +369,7 @@
     "image-hero": false,
     "description-hero": false,
     "About": false,
-    "Experience": false,
+    "Experience": true,
     "Projects": true,
     "Education": true,
     "CoursesAndCertifications": true,
